@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewData["Title"] = "Giriş";
+}
+<div class="login-container">
+    <!-- Şirket Logosu -->
+    <div class="logo-container">
+        <img src="/images/logo.png" alt="Şirket Logosu" class="company-logo">
+
+    </div>
+
+    <!-- Giriş Formu -->
+    <h1>Giriş Yap</h1>
+    <form asp-action="Login" method="post" class="login-form">
+        <div class="form-group">
+            <label for="username">Kullanıcı Adı</label>
+            <input type="text" name="username" id="username" class="form-control" required />
+        </div>
+        <div class="form-group">
+            <label for="password">Şifre</label>
+            <input type="password" name="password" id="password" class="form-control" required />
+        </div>
+        <button type="submit" class="btn btn-primary">Giriş Yap</button>
+    </form>
+    <link rel="stylesheet" type="text/css" href="~/css/site.css">
+
+    @if (ViewBag.ErrorMessage != null)
+    {
+        <div class="alert alert-danger">
+            @ViewBag.ErrorMessage
+        </div>
+    }
+
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success">
+            @TempData["SuccessMessage"]
+        </div>
+    }
+
+</div>
+

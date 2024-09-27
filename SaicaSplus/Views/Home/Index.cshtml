@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Ana Sayfa";
+}
+
+<h1>Hoş Geldiniz</h1>
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["SuccessMessage"]
+    </div>
+}
+
+@if (ViewBag.ErrorMessage != null)
+{
+    <div class="alert alert-danger">
+        @ViewBag.ErrorMessage
+    </div>
+}

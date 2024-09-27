@@ -1,0 +1,152 @@
+﻿/*html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+body {
+    background-color: #00ff90;*/ /* Arka plan rengini istediğin renk koduna göre değiştir */
+/*}*/
+
+
+/* Sayfa ve form genel ayarları */
+body, html {
+    height: 100%; /* Sayfanın tamamını kapsasın */
+    margin: 0;
+    padding: 0;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column; /* Elemanları dikey sırada tut */
+    justify-content: center; /* Yatayda ortala */
+    align-items: center; /* Dikeyde ortala */
+    height: 100vh; /* Tam ekran yüksekliği */
+    background-color: #f4f5f6; /* Arka plan rengi */
+}
+
+/* Logo için stil */
+.logo-container {
+    margin-bottom: 45px; /* Logo ile form arasına boşluk ekle */
+}
+
+.company-logo {
+    max-width: 150px; /* Logonun genişliğini ayarla */
+    height: auto; /* Yükseklik, genişliğe göre ayarlanacak */
+}
+
+/* Giriş formunun stilini ayarla */
+.login-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; /* Genişlik sınırı */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+    button:hover {
+        background-color: #45a049;
+    }
+
+/* Hata ve başarı mesajları */
+.alert {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+body {
+    background-color: #00ff90;
+}
+body {
+    background-image: url('/images/background.jpg'); /* Arka plan resmi */
+    background-size: cover; /* Resmin boyutunu kapla */
+    background-position: center; /* Resmi ortala */
+    background-repeat: no-repeat; /* Tekrar etme */
+    min-height: 100vh; /* Tam sayfa yüksekliği */
+    color: white; /* Yazı rengi (isteğe bağlı) */
+}
+.login-container {
+    max-width: 400px; /* İstediğiniz genişlik */
+    margin: 0 auto; /* Ortala */
+    padding: 20px; /* İçerik için biraz alan bırak */
+    background-color: rgba(0, 0, 0, 0.5); /* Opsiyonel: arka planı hafif koyulaştırma */
+    border-radius: 8px; /* Kenarları yuvarlaştır */
+    position: relative; /* Diğer stillerle uyumlu olmasını sağlamak için */
+}
+input {
+    width: 100%; /* Alanların genişliğini ayarla */
+    padding: 10px; /* İç boşluk ekle */
+    margin: 10px 0; /* Üst ve alt boşluk */
+    border: 1px solid #ccc; /* Kenar rengi */
+    border-radius: 4px; /* Kenar yuvarlama */
+    box-sizing: border-box; /* İçerik dahil alan hesaplama */
+}
+
+label {
+    display: block; /* Etiketleri blok olarak göster */
+    margin-bottom: 5px; /* Etiket ile giriş alanı arasına boşluk bırak */
+    color: white; /* Yazı rengini ayarla */
+}

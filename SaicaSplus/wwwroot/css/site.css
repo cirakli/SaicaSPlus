@@ -90,7 +90,7 @@ button {
 }
 
     button:hover {
-        background-color: #45a049;
+        background-color: white;
     }
 
 /* Hata ve başarı mesajları */
@@ -117,9 +117,13 @@ body {
     margin-bottom: 60px;
 }
 
-body {
+/*body {
     background-color: #00ff90;
+}*/
+body {
+    background-color:white; /* Arka plan rengini sıfırla */
 }
+
 body {
     background-image: url('/images/background.jpg'); /* Arka plan resmi */
     background-size: cover; /* Resmin boyutunu kapla */

@@ -16,7 +16,7 @@ public class UserRepository
         using (var connection = new SqlConnection(_connectionString))
         {
             connection.Open();
-            var command = new SqlCommand("SELECT s_user_domain FROM s_user where aktif=12", connection);
+            var command = new SqlCommand("SELECT s_user_domain FROM s_user where aktif=21", connection);
             using (var reader = command.ExecuteReader())
             {
                 while (reader.Read())

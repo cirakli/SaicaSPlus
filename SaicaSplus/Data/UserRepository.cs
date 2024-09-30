@@ -18,7 +18,8 @@ public class UserRepository
             connection.Open();
 
             var command = new SqlCommand("SELECT s_user_domain FROM s_user where aktif=11", connection);
-            
+            var command = new SqlCommand("SELECT s_user_domain FROM s_user where aktif=1", connection);
+
             using (var reader = command.ExecuteReader())
             {
                 while (reader.Read())

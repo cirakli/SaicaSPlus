@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\SaicaSplus.csproj": {}
+    "C:\\Users\\scirakli\\Documents\\ASP Projeler\\Saica S Plus\\SaicaSPlus\\SaicaSplus\\SaicaSplus.csproj": {}
   },
   "projects": {
-    "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\SaicaSplus.csproj": {
+    "C:\\Users\\scirakli\\Documents\\ASP Projeler\\Saica S Plus\\SaicaSPlus\\SaicaSplus\\SaicaSplus.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\SaicaSplus.csproj",
+        "projectUniqueName": "C:\\Users\\scirakli\\Documents\\ASP Projeler\\Saica S Plus\\SaicaSPlus\\SaicaSplus\\SaicaSplus.csproj",
         "projectName": "SaicaSplus",
-        "projectPath": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\SaicaSplus.csproj",
-        "packagesPath": "C:\\Users\\asever\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\obj\\",
+        "projectPath": "C:\\Users\\scirakli\\Documents\\ASP Projeler\\Saica S Plus\\SaicaSPlus\\SaicaSplus\\SaicaSplus.csproj",
+        "packagesPath": "C:\\Users\\scirakli\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\scirakli\\Documents\\ASP Projeler\\Saica S Plus\\SaicaSPlus\\SaicaSplus\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\asever\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\scirakli\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SaicaSplus")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+72f4f5446a982e5337aef004e2d9b4dc611ef2a5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3f2da3cc89987227386410b1e1bcef8484b87fdc")]
 [assembly: System.Reflection.AssemblyProductAttribute("SaicaSplus")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SaicaSplus")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

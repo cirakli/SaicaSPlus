@@ -9119,11 +9119,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\SaicaSplus.csproj",
+      "projectUniqueName": "C:\\proje\\SaicaSplus\\SaicaSplus\\SaicaSplus.csproj",
       "projectName": "SaicaSplus",
-      "projectPath": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\SaicaSplus.csproj",
+      "projectPath": "C:\\proje\\SaicaSplus\\SaicaSplus\\SaicaSplus.csproj",
       "packagesPath": "C:\\Users\\asever\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\obj\\",
+      "outputPath": "C:\\proje\\SaicaSplus\\SaicaSplus\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

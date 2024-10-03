@@ -1,35 +1,10 @@
-﻿/*html {
-  font-size: 14px;
-}
-
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
-html {
-  position: relative;
-  min-height: 100%;
-}
-
-body {
-  margin-bottom: 60px;
-}
-body {
-    background-color: #00ff90;*/ /* Arka plan rengini istediğin renk koduna göre değiştir */
-/*}*/
-
+﻿
 
 /* Sayfa ve form genel ayarları */
 body, html {
-    height: 100%; /* Sayfanın tamamını kapsasın */
-    margin: 0;
-    padding: 0;
+    height:10%;/* Sayfanın tamamını kapsasın */
+    margin:0;
+    padding:0;
 }
 
 .login-container {
@@ -90,8 +65,27 @@ button {
 }
 
     button:hover {
-        background-color: white;
+        background-color: #4CAF50;
+        color: white; /* Yazı rengi aynı kalacak */
+        opacity: 1; /* Butonun opaklığını ayarla, kaybolmasın */
     }
+input::placeholder {
+    color: black; 
+    font-style: italic; /* İtalik yazı stili */
+}
+
+/* Kullanıcı adı ve şifre alanına tıklandığında placeholder'ı gizle */
+input:focus::placeholder {
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+}
+
+/* Kullanıcı adı ve şifre alanlarından ayrıldığında placeholder'ı tekrar göster */
+input::placeholder {
+    opacity: 1; /* Placeholder varsayılan durumda görünür olsun */
+    transition: opacity 0.3s ease; /* Yumuşak geçiş efekti */
+}
+
 
 /* Hata ve başarı mesajları */
 .alert {
@@ -116,22 +110,52 @@ button {
 body {
     margin-bottom: 60px;
 }
+/* Gölgeyi kaldır */
+.login-container,
+.logo-container,
+form {
+    box-shadow: none !important; /* Gölgeyi kaldırmak için */
+    border: none !important; /* Kenarlık varsa kaldırmak için */
+    background-color: transparent !important; /* Arka planı şeffaf yap */
+}
 
-/*body {
-    background-color: #00ff90;
-}*/
+
 body {
     background-color:white; /* Arka plan rengini sıfırla */
 }
 
+
 body {
-    background-image: url('/images/background.jpg'); /* Arka plan resmi */
+    background-image: url('/images/proje_003.jpg'); /* Arka plan resmi */
+    background-size: contain; /* Resmin boyutunu kapsayıcı yap */
     background-size: cover; /* Resmin boyutunu kapla */
-    background-position: center; /* Resmi ortala */
+    background-position: center top; /* Resmi ortala ve yukarıdan hizala */
     background-repeat: no-repeat; /* Tekrar etme */
     min-height: 100vh; /* Tam sayfa yüksekliği */
     color: white; /* Yazı rengi (isteğe bağlı) */
 }
+
+/* Login kutusunu yukarı taşı */
+/*.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;*/ /* Ortalamak için */
+    /*margin-top:100px;*/ /* Yukarı kaydırma */
+    /*padding-top: 20px;*/ /* Yukarıda boşluk bırakmak için */
+    /*height: 100vh;*/ /* Sayfanın tamamını kapsayacak */
+    /*justify-content: center;;*/ /* Yukarıya hizalama */
+/*}
+
+/* Şirket logosu için */
+.logo-container {
+    margin-bottom: 20px; /* Logonun altında biraz boşluk bırak */
+}
+
+/* Giriş formunun üst kısmını biraz yukarı al */
+.login-form {
+    margin-top: 10px;
+}
+
 .login-container {
     max-width: 400px; /* İstediğiniz genişlik */
     margin: 0 auto; /* Ortala */
@@ -139,6 +163,10 @@ body {
     background-color: rgba(0, 0, 0, 0.5); /* Opsiyonel: arka planı hafif koyulaştırma */
     border-radius: 8px; /* Kenarları yuvarlaştır */
     position: relative; /* Diğer stillerle uyumlu olmasını sağlamak için */
+}
+.login-container {
+    height: 50vh; /* Yüksekliği ayarlayın */
+    margin-top:-120px;/* Yukarı kaydırmak için boşluk */
 }
 input {
     width: 100%; /* Alanların genişliğini ayarla */
@@ -154,3 +182,47 @@ label {
     margin-bottom: 5px; /* Etiket ile giriş alanı arasına boşluk bırak */
     color: white; /* Yazı rengini ayarla */
 }
+/* Kullanıcı adı ve şifre giriş kutularının boyutunu ayarlayın */
+input[type="text"], input[type="password"] {
+    width: 200px; /* Genişlik */
+    height: 30px; /* Yükseklik */
+    font-size: 14px; /* Yazı boyutu */
+    padding: 5px; /* İç boşluk */
+}
+
+/* Giriş Yap butonunun boyutunu küçültme */
+button[type="submit"] {
+    width: 100px; /* Genişlik */
+    height: 35px; /* Yükseklik */
+    font-size: 14px; /* Yazı boyutu */
+}
+/* Tüm formu ortalamak için container */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Dikey ortalama */
+    align-items: center; /* Yatay ortalama */
+    height: 100vh; /* Sayfanın tamamını kapsaması için */
+}
+
+/* Giriş formu düzeni */
+.login-form {
+    display: flex;
+    flex-direction: column; /* Form elemanlarını dikey sırada göster */
+    align-items: center; /* Elemanları ortalamak için */
+}
+
+/* Form içindeki inputların boyutunu küçültme */
+input[type="text"], input[type="password"] {
+    width: 200px;
+    margin: 10px 0; /* Üst ve alt boşluk */
+}
+
+/* Giriş Yap butonunu ortalamak */
+button[type="submit"] {
+    width: 150px;
+    margin-top: 20px; /* Üstünde boşluk */
+}
+
+
+

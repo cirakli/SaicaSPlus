@@ -8,21 +8,35 @@
         <img src="/images/logo.png" alt="Şirket Logosu" class="company-logo">
 
     </div>
+    <link rel="stylesheet" type="text/css" href="~/css/site.css">
+
 
     <!-- Giriş Formu -->
-    <h1>Giriş Yap</h1>
+    @* <h1>Giriş Yap</h1>
     <form asp-action="Login" method="post" class="login-form">
         <div class="form-group">
             <label for="username">Kullanıcı Adı</label>
             <input type="text" name="username" id="username" class="form-control" required />
         </div>
         <div class="form-group">
-            <label for="password">Şifre</label>
+             <label for="password">Şifre</label> 
             <input type="password" name="password" id="password" class="form-control" required />
+        </div>
+        <button type="submit" class="btn btn-primary">Giriş Yap</button> 
+    </form>
+     <link rel="stylesheet" type="text/css" href="~/css/site.css">
+ *@
+    <form asp-action="Login" method="post" class="login-form">
+        <div class="form-group">
+          @*   <label for="username">Kullanıcı Adı</label> *@
+            <input type="text" name="username" id="username" class="form-control" placeholder="Kullanıcı Adı" required />
+        </div>
+        <div class="form-group">
+            @* <label for="password">Şifre</label> *@
+            <input type="password" name="password" id="password" class="form-control" placeholder="Şifre" required />
         </div>
         <button type="submit" class="btn btn-primary">Giriş Yap</button>
     </form>
-    <link rel="stylesheet" type="text/css" href="~/css/site.css">
 
     @if (ViewBag.ErrorMessage != null)
     {

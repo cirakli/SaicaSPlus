@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "1H3Hspg1eszkmY422Na+007trJ99wEhSMQaWM/h+CaM=",
+  "Hash": "SbJv0nH4T9uaWYp7YcSd6UsLVd6oZTjVe2YBPXahQQ8=",
   "Source": "SaicaSplus",
   "BasePath": "_content/SaicaSplus",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "SaicaSplus\\wwwroot",
       "Source": "SaicaSplus",
-      "ContentRoot": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\",
+      "ContentRoot": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\",
       "BasePath": "_content/SaicaSplus",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\obj\\Debug\\net8.0\\scopedcss\\bundle\\SaicaSplus.styles.css",
+      "Identity": "C:\\proje\\SaicaSplus\\SaicaSplus\\obj\\Debug\\net8.0\\scopedcss\\bundle\\SaicaSplus.styles.css",
       "SourceId": "SaicaSplus",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\proje\\SaicaSplus\\SaicaSplus\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/SaicaSplus",
       "RelativePath": "SaicaSplus.styles.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\obj\\Debug\\net8.0\\scopedcss\\bundle\\SaicaSplus.styles.css"
+      "OriginalItemSpec": "C:\\proje\\SaicaSplus\\SaicaSplus\\obj\\Debug\\net8.0\\scopedcss\\bundle\\SaicaSplus.styles.css"
     },
     {
-      "Identity": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\SaicaSplus.bundle.scp.css",
+      "Identity": "C:\\proje\\SaicaSplus\\SaicaSplus\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\SaicaSplus.bundle.scp.css",
       "SourceId": "SaicaSplus",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\proje\\SaicaSplus\\SaicaSplus\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/SaicaSplus",
       "RelativePath": "SaicaSplus.bundle.scp.css",
       "AssetKind": "All",
@@ -52,13 +52,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\SaicaSplus.bundle.scp.css"
+      "OriginalItemSpec": "C:\\proje\\SaicaSplus\\SaicaSplus\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\SaicaSplus.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\css\\site.css",
+      "Identity": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\css\\site.css",
       "SourceId": "SaicaSplus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\",
+      "ContentRoot": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\",
       "BasePath": "_content/SaicaSplus",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\favicon.ico",
+      "Identity": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\favicon.ico",
       "SourceId": "SaicaSplus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\",
+      "ContentRoot": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\",
       "BasePath": "_content/SaicaSplus",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\images\\background.jpg",
+      "Identity": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\images\\background.jpg",
       "SourceId": "SaicaSplus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\",
+      "ContentRoot": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\",
       "BasePath": "_content/SaicaSplus",
       "RelativePath": "images/background.jpg",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\images\\background.jpg"
     },
     {
-      "Identity": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\images\\logo.png",
+      "Identity": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\images\\logo.png",
       "SourceId": "SaicaSplus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\",
+      "ContentRoot": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\",
       "BasePath": "_content/SaicaSplus",
       "RelativePath": "images/logo.png",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\images\\logo.png"
     },
     {
-      "Identity": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\js\\site.js",
+      "Identity": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\js\\site.js",
       "SourceId": "SaicaSplus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\",
+      "ContentRoot": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\",
       "BasePath": "_content/SaicaSplus",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -150,10 +150,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "SaicaSplus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\",
+      "ContentRoot": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\",
       "BasePath": "_content/SaicaSplus",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -169,10 +169,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "SaicaSplus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\",
+      "ContentRoot": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\",
       "BasePath": "_content/SaicaSplus",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -188,10 +188,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "SaicaSplus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\",
+      "ContentRoot": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\",
       "BasePath": "_content/SaicaSplus",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -207,10 +207,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "SaicaSplus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\",
+      "ContentRoot": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\",
       "BasePath": "_content/SaicaSplus",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -226,10 +226,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "SaicaSplus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\",
+      "ContentRoot": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\",
       "BasePath": "_content/SaicaSplus",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -245,10 +245,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "SaicaSplus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\",
+      "ContentRoot": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\",
       "BasePath": "_content/SaicaSplus",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -264,10 +264,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "SaicaSplus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\",
+      "ContentRoot": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\",
       "BasePath": "_content/SaicaSplus",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -283,10 +283,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "SaicaSplus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\",
+      "ContentRoot": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\",
       "BasePath": "_content/SaicaSplus",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -302,10 +302,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "SaicaSplus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\",
+      "ContentRoot": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\",
       "BasePath": "_content/SaicaSplus",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -321,10 +321,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "SaicaSplus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\",
+      "ContentRoot": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\",
       "BasePath": "_content/SaicaSplus",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "SaicaSplus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\",
+      "ContentRoot": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\",
       "BasePath": "_content/SaicaSplus",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -359,10 +359,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "SaicaSplus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\",
+      "ContentRoot": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\",
       "BasePath": "_content/SaicaSplus",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -378,10 +378,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "SaicaSplus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\",
+      "ContentRoot": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\",
       "BasePath": "_content/SaicaSplus",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -397,10 +397,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "SaicaSplus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\",
+      "ContentRoot": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\",
       "BasePath": "_content/SaicaSplus",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -416,10 +416,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "SaicaSplus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\",
+      "ContentRoot": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\",
       "BasePath": "_content/SaicaSplus",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -435,10 +435,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "SaicaSplus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\",
+      "ContentRoot": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\",
       "BasePath": "_content/SaicaSplus",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -454,10 +454,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "SaicaSplus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\",
+      "ContentRoot": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\",
       "BasePath": "_content/SaicaSplus",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -473,10 +473,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "SaicaSplus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\",
+      "ContentRoot": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\",
       "BasePath": "_content/SaicaSplus",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -492,10 +492,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "SaicaSplus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\",
+      "ContentRoot": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\",
       "BasePath": "_content/SaicaSplus",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -511,10 +511,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "SaicaSplus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\",
+      "ContentRoot": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\",
       "BasePath": "_content/SaicaSplus",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -530,10 +530,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "SaicaSplus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\",
+      "ContentRoot": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\",
       "BasePath": "_content/SaicaSplus",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -549,10 +549,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "SaicaSplus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\",
+      "ContentRoot": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\",
       "BasePath": "_content/SaicaSplus",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -568,10 +568,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "SaicaSplus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\",
+      "ContentRoot": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\",
       "BasePath": "_content/SaicaSplus",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -587,10 +587,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "SaicaSplus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\",
+      "ContentRoot": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\",
       "BasePath": "_content/SaicaSplus",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -606,10 +606,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "SaicaSplus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\",
+      "ContentRoot": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\",
       "BasePath": "_content/SaicaSplus",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -625,10 +625,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "SaicaSplus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\",
+      "ContentRoot": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\",
       "BasePath": "_content/SaicaSplus",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -644,10 +644,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "SaicaSplus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\",
+      "ContentRoot": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\",
       "BasePath": "_content/SaicaSplus",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -663,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "SaicaSplus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\",
+      "ContentRoot": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\",
       "BasePath": "_content/SaicaSplus",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -682,10 +682,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "SaicaSplus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\",
+      "ContentRoot": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\",
       "BasePath": "_content/SaicaSplus",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -701,10 +701,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "SaicaSplus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\",
+      "ContentRoot": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\",
       "BasePath": "_content/SaicaSplus",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -720,10 +720,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "SaicaSplus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\",
+      "ContentRoot": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\",
       "BasePath": "_content/SaicaSplus",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -739,10 +739,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "SaicaSplus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\",
+      "ContentRoot": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\",
       "BasePath": "_content/SaicaSplus",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -758,10 +758,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "SaicaSplus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\",
+      "ContentRoot": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\",
       "BasePath": "_content/SaicaSplus",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -777,10 +777,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "SaicaSplus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\",
+      "ContentRoot": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\",
       "BasePath": "_content/SaicaSplus",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -796,10 +796,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "SaicaSplus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\",
+      "ContentRoot": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\",
       "BasePath": "_content/SaicaSplus",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -815,10 +815,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "SaicaSplus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\",
+      "ContentRoot": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\",
       "BasePath": "_content/SaicaSplus",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -834,10 +834,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "SaicaSplus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\",
+      "ContentRoot": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\",
       "BasePath": "_content/SaicaSplus",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -853,10 +853,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "SaicaSplus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\",
+      "ContentRoot": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\",
       "BasePath": "_content/SaicaSplus",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -872,10 +872,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "SaicaSplus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\",
+      "ContentRoot": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\",
       "BasePath": "_content/SaicaSplus",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -891,10 +891,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "SaicaSplus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\",
+      "ContentRoot": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\",
       "BasePath": "_content/SaicaSplus",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -910,10 +910,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "SaicaSplus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\",
+      "ContentRoot": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\",
       "BasePath": "_content/SaicaSplus",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -929,10 +929,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "SaicaSplus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\",
+      "ContentRoot": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\",
       "BasePath": "_content/SaicaSplus",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -948,10 +948,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "SaicaSplus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\",
+      "ContentRoot": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\",
       "BasePath": "_content/SaicaSplus",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -967,10 +967,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "SaicaSplus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\",
+      "ContentRoot": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\",
       "BasePath": "_content/SaicaSplus",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -986,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "SaicaSplus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\",
+      "ContentRoot": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\",
       "BasePath": "_content/SaicaSplus",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -1005,10 +1005,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "SaicaSplus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\",
+      "ContentRoot": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\",
       "BasePath": "_content/SaicaSplus",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -1024,10 +1024,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "SaicaSplus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\",
+      "ContentRoot": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\",
       "BasePath": "_content/SaicaSplus",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -1043,10 +1043,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "SaicaSplus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\",
+      "ContentRoot": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\",
       "BasePath": "_content/SaicaSplus",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -1062,10 +1062,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "SaicaSplus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\",
+      "ContentRoot": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\",
       "BasePath": "_content/SaicaSplus",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -1081,10 +1081,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "SaicaSplus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\",
+      "ContentRoot": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\",
       "BasePath": "_content/SaicaSplus",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -1100,10 +1100,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "SaicaSplus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\",
+      "ContentRoot": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\",
       "BasePath": "_content/SaicaSplus",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -1119,10 +1119,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "SaicaSplus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\",
+      "ContentRoot": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\",
       "BasePath": "_content/SaicaSplus",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -1138,10 +1138,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "SaicaSplus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\",
+      "ContentRoot": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\",
       "BasePath": "_content/SaicaSplus",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -1157,10 +1157,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "SaicaSplus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\",
+      "ContentRoot": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\",
       "BasePath": "_content/SaicaSplus",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -1176,10 +1176,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "SaicaSplus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\",
+      "ContentRoot": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\",
       "BasePath": "_content/SaicaSplus",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -1195,10 +1195,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "SaicaSplus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\",
+      "ContentRoot": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\",
       "BasePath": "_content/SaicaSplus",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -1214,10 +1214,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "SaicaSplus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\asever\\Documents\\ASP Projeler\\SaicaSplus\\SaicaSplus\\wwwroot\\",
+      "ContentRoot": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\",
       "BasePath": "_content/SaicaSplus",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",

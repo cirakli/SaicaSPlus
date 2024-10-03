@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using SaicaSplus.Models;
 
 public class AccountController : Controller
 {

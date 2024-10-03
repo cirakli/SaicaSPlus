@@ -13,12 +13,12 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\images\\background.jpg",
-      "PackagePath": "staticwebassets\\images\\background.jpg"
-    },
-    {
       "Id": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\images\\logo.png",
       "PackagePath": "staticwebassets\\images\\logo.png"
+    },
+    {
+      "Id": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\images\\proje_003.jpg",
+      "PackagePath": "staticwebassets\\images\\proje_003.jpg"
     },
     {
       "Id": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\js\\site.js",

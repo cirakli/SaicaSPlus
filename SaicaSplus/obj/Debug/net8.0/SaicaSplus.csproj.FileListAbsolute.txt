@@ -292,10 +292,7 @@ C:\Users\asever\Documents\ASP Projeler\Saica S Plus\SaicaSplus\SaicaSplus\obj\De
 C:\Users\asever\Documents\ASP Projeler\Saica S Plus\SaicaSplus\SaicaSplus\obj\Debug\net8.0\SaicaSplus.pdb
 C:\Users\asever\Documents\ASP Projeler\Saica S Plus\SaicaSplus\SaicaSplus\obj\Debug\net8.0\SaicaSplus.genruntimeconfig.cache
 C:\Users\asever\Documents\ASP Projeler\Saica S Plus\SaicaSplus\SaicaSplus\obj\Debug\net8.0\ref\SaicaSplus.dll
-<<<<<<< HEAD
-=======
-C:\Users\scirakli\Documents\ASP Projeler\Saica S Plus\SaicaSPlus\SaicaSplus\obj\Debug\net8.0\SaicaSplus.sourcelink.json
->>>>>>> 8abc786bc812633c1bbb4330b8e0853aad0e1b47
+8abc786bc812633c1bbb4330b8e0853aad0e1b47
 C:\Users\asever\Documents\ASP Projeler\SaicaSplus\SaicaSplus\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\asever\Documents\ASP Projeler\SaicaSplus\SaicaSplus\bin\Debug\net8.0\appsettings.json
 C:\Users\asever\Documents\ASP Projeler\SaicaSplus\SaicaSplus\bin\Debug\net8.0\SaicaSplus.staticwebassets.runtime.json

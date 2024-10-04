@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "YsxqV1+9MBta2n71mApBS4mYnGv5+qW03yTHx91EozM=",
+  "Hash": "7KXwmBA9r4GH7EPU/2kinNGvqfUf6iwy6C+VgheWjAE=",
   "Source": "SaicaSplus",
   "BasePath": "_content/SaicaSplus",
   "Mode": "Default",
@@ -129,6 +129,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\proje_003.jpg"
+    },
+    {
+      "Identity": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\images\\proje_back.jpg",
+      "SourceId": "SaicaSplus",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\",
+      "BasePath": "_content/SaicaSplus",
+      "RelativePath": "images/proje_back.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\proje_back.jpg"
     },
     {
       "Identity": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\js\\site.js",

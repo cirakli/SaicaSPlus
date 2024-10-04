@@ -21,6 +21,10 @@
       "PackagePath": "staticwebassets\\images\\proje_003.jpg"
     },
     {
+      "Id": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\images\\proje_back.jpg",
+      "PackagePath": "staticwebassets\\images\\proje_back.jpg"
+    },
+    {
       "Id": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

@@ -22,6 +22,14 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/proje/SaicaSplus/SaicaSplus/Views/Ekran/Ekle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWtyYW5cRWtsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/proje/SaicaSplus/SaicaSplus/Views/Hata/Yetkisiz.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGF0YVxZZXRraXNpei5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/proje/SaicaSplus/SaicaSplus/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

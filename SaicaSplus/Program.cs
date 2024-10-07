@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using SaicaSplus.Services;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -14,6 +15,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<UserRepository>(); // UserRepository servisini ekle
 builder.Services.AddScoped<ActiveDirectoryService>(); // ActiveDirectoryService servisini ekle
+builder.Services.AddScoped<YetkiServisi>(); // YetkiServisi DI olarak ekleniyor
 
 
 //// 2. Veritabanı bağlantı ayarını yükleme

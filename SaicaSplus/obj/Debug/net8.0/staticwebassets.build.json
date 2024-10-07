@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "7KXwmBA9r4GH7EPU/2kinNGvqfUf6iwy6C+VgheWjAE=",
+  "Hash": "pNlxuWA4iu5fXTsvEnsISAOE3ipMJmIH10JeA1UV3/w=",
   "Source": "SaicaSplus",
   "BasePath": "_content/SaicaSplus",
   "Mode": "Default",
@@ -53,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\proje\\SaicaSplus\\SaicaSplus\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\SaicaSplus.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\css\\Index.css",
+      "SourceId": "SaicaSplus",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\",
+      "BasePath": "_content/SaicaSplus",
+      "RelativePath": "css/Index.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Index.css"
     },
     {
       "Identity": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\css\\site.css",

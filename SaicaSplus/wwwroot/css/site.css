@@ -13,6 +13,8 @@ body {
     background-repeat: no-repeat; /* Tekrar etme */
 }
 
+
+
 /* Gölgeyi Kaldır*/
 .login-container,
 .login-container,
@@ -170,3 +172,4 @@ button[type="submit"] {
     width: 100px; /* Genişlik */
     height: 25px; /* Yükseklik */
 }
+

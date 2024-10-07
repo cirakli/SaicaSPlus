@@ -1,8 +1,7 @@
-﻿@{
+﻿ @{
     ViewData["Title"] = "Ana Sayfa";
-}
-
-<h1>Hoş Geldiniz</h1>
+} 
+<h1>Saica S Plus </h1>
 
 @if (TempData["SuccessMessage"] != null)
 {
@@ -10,6 +9,44 @@
         @TempData["SuccessMessage"]
     </div>
 }
+<style>
+    body {
+        background-color: white; /* Ana sayfa için arka plan rengi */
+        background-image: none; /* Arka plan resmini kaldır */
+    }
+</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ana Sayfa</title>
+    <link rel="stylesheet" href="~/css/Index.css">
+</head>
+<body>
+    <div class="main-container">
+        <!-- Sol Panel -->
+        <div class="sidebar">
+            <ul>
+                <li><a href="#">Yönetim Raporu</a></li>
+                <li><a href="#">Maaliyet Yönetimi</a></li>
+                <li><a href="#">Satış & Pazarlama Yönetimi</a></li>
+                 <li><a href="#">Üretim Yönetimi</a></li>
+                  <li><a href="#">Kalite Yönetimi</a></li>
+                   <li><a href="#">Hammadde Yönetimi</a></li>
+                    <li><a href="#">Admin Paneli</a></li>
+            </ul>
+        </div>
+
+        <!-- Ana İçerik Alanı -->
+       @*  <div class="content">
+            <h1>Ana Sayfa</h1>
+            <p>Burası ana sayfanızın içeriği olacak.</p>
+        </div> *@
+    </div>
+</body>
+</html>
+
 
 @if (ViewBag.ErrorMessage != null)
 {

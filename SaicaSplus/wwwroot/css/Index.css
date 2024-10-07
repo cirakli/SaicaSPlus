@@ -1,0 +1,49 @@
+﻿/* Genel Ayarlar */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Tüm sayfa için ana kapsayıcı */
+.main-container {
+    display: flex;
+    height: 100vh; /* Tam ekran yüksekliği */
+}
+
+/* Sol panelin stili */
+.sidebar {
+    width: 250px; /* Sol panelin genişliği */
+    background-color: #4CAF50; /* Yeşil renk */
+    padding-top: 20px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    color: white;
+}
+
+    /* Sol paneldeki seçeneklerin stili */
+    .sidebar ul {
+        list-style-type: none; /* Noktaları kaldır */
+        padding: 0;
+    }
+
+        .sidebar ul li {
+            margin: 20px 0; /* Seçenekler arasına boşluk */
+        }
+
+            .sidebar ul li a {
+                color: white; /* Yazı rengini beyaz yap */
+                text-decoration: none; /* Alt çizgiyi kaldır */
+                font-size: 18px; /* Yazı boyutu */
+            }
+
+                .sidebar ul li a:hover {
+                    text-decoration: underline; /* Üzerine gelindiğinde alt çizgi */
+                }
+
+/* Ana içerik alanının stili */
+.content {
+    flex-grow: 1; /* Geri kalan alanı kaplasın */
+    padding: 20px;
+}

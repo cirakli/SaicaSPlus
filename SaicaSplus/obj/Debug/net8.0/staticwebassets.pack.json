@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\SaicaSplus.bundle.scp.css"
     },
     {
+      "Id": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\css\\Index.css",
+      "PackagePath": "staticwebassets\\css\\Index.css"
+    },
+    {
       "Id": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

@@ -1,6 +1,4 @@
-﻿using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore; // For AnyAsync
-using SaicaSplus.Models; // Your models
+﻿using Microsoft.EntityFrameworkCore; // For AnyAsync
 
 namespace SaicaSplus.Services
 

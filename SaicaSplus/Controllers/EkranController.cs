@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SaicaSplus.Services; // YetkiServisi sınıfını eklemek için gerekli
-using System.Threading.Tasks;
 
 namespace SaicaSplus.Controllers
 {

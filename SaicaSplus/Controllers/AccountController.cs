@@ -35,6 +35,7 @@ public class AccountController : Controller
             if (userDomains.Contains(username))
             {
                 // Giriş başarılı
+                HttpContext.Session.SetString("Username", username); // Kullanıcı adını oturumda tut
                 TempData["SuccessMessage"] = "Giriş başarılı!";
                 return RedirectToAction("Index", "Home"); // Ana sayfaya yönlendir
             }

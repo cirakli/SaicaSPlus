@@ -38,8 +38,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/proje/SaicaSplus/SaicaSplus/Views/Home/yönetim22.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVx5w7ZuZXRpbTIyLmNzaHRtbA==
+[C:/proje/SaicaSplus/SaicaSplus/Views/Home/yetki_yok.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVx5ZXRraV95b2suY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/proje/SaicaSplus/SaicaSplus/Views/Home/yönetim.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVx5w7ZuZXRpbS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/proje/SaicaSplus/SaicaSplus/Views/Shared/Error.cshtml]

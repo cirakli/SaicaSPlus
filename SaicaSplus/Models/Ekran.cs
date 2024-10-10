@@ -4,7 +4,7 @@
     {
 
         public int Id { get; set; } // Ekran id
-        public string EkranAdi { get; set; } // Ekranın ismi
+        public string EkranAd { get; set; } // Ekranın ismi
 
     }
 }

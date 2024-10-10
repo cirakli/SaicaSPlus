@@ -11,7 +11,6 @@ public class ApplicationDbContext : DbContext
 
     public DbSet<User> Users { get; set; }
     public DbSet<Ekran> Ekranlar { get; set; }
-    public DbSet<Islem> Islemler { get; set; }
     public DbSet<Yetki> Yetkiler { get; set; }
 }
 

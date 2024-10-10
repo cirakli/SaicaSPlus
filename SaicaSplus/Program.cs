@@ -17,6 +17,8 @@ builder.Services.AddScoped<UserRepository>(); // UserRepository servisini ekle
 builder.Services.AddScoped<ActiveDirectoryService>(); // ActiveDirectoryService servisini ekle
 builder.Services.AddScoped<YetkiServisi>(); // YetkiServisi DI olarak ekleniyor
 
+builder.Services.AddSession(); // Oturum yönetimini ekle
+
 
 //// 2. Veritabanı bağlantı ayarını yükleme
 //builder.Services.AddDbContext<ApplicationDbContext>(options =>
@@ -40,38 +42,10 @@ app.UseStaticFiles();
 
 app.UseRouting();
 app.UseAuthorization();
+app.UseSession(); // Oturum yönetimini kullan
 
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Account}/{action=Login}/{id?}");
 
 app.Run();
-
-
-
-
-
-
-
-//// Configure the HTTP request pipeline.
-//if (!app.Environment.IsDevelopment())
-//{
-//    app.UseExceptionHandler("/Home/Error");
-//    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-//    app.UseHsts();
-//}
-
-//app.UseHttpsRedirection();
-//app.UseStaticFiles();
-
-//app.UseRouting();
-
-//app.UseAuthorization();
-
-//app.MapControllerRoute(
-//    name: "default",
-//    pattern: "{controller=Home}/{action=Index}/{id?}");
-
-//app.Run();
-
-

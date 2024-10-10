@@ -27,7 +27,7 @@ namespace SaicaSplus.Controllers
         }
 
 
-        public IActionResult Yönetim22()
+        public IActionResult Yönetim()
         {
             var username = HttpContext.Session.GetString("Username");
             if (username == null)
@@ -35,20 +35,25 @@ namespace SaicaSplus.Controllers
                 return RedirectToAction("Login", "Account");
             }
 
-            if (_userRepository.HasPermission(username, "yönetim22"))
+            if (_userRepository.HasPermission(username, "yönetim"))
             {
                 return View();
             }
             else
             {
                 ViewBag.ErrorMessage = "Yetkiniz bulunmamaktadır.";
-                return RedirectToAction("Index");
+                return RedirectToAction("yetki_yok");
             }
         }
 
         public IActionResult Privacy()
         {
             return View();
+        }
+
+        public IActionResult yetki_yok()
+        {
+            return View(); // yetki_yok.cshtml dosyasını döndürür
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

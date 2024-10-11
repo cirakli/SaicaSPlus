@@ -1,56 +1,114 @@
-﻿ @{
+﻿@{
     ViewData["Title"] = "Ana Sayfa";
-} 
-<h1>Saica S Plus </h1>
-
-@if (TempData["SuccessMessage"] != null)
-{
-    <div class="alert alert-success">
-        @TempData["SuccessMessage"]
-    </div>
 }
-<style>
-    body {
-        background-color: white; /* Ana sayfa için arka plan rengi */
-        background-image: none; /* Arka plan resmini kaldır */
-    }
-</style>
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ana Sayfa</title>
-    <link rel="stylesheet" href="~/css/Index.css">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/Index.css"> <!-- CSS dosyanız -->
+    <style>
+        body {
+            background-color: white; /* Ana sayfa için arka plan rengi */
+            background-image: none; /* Arka plan resmini kaldır */
+        }
+
+        /* Üst panel için genel ayarlar */
+        h1 {
+            background-color: #00792c; /* Yeşil panel rengi */
+            color: white;
+            text-align: center; /* Ortala */
+            padding: 30px;
+            margin: 0; /* Tüm boşlukları kaldır */
+            width: 100%; /* Tüm genişliği kaplar */
+            box-sizing: border-box; /* Tüm padding ve border hesaba katılır */
+        }
+
+        /* Navbar ayarları */
+        .navbar {
+            display: flex; /* Flexbox ile hizalama */
+            align-items: center; /* Dikey hizalama */
+            background-color: white; /* Arka planı beyaz yap */
+            padding: 10px 20px; /* İç boşluklar */
+            box-sizing: border-box;
+            justify-content: space-between; /* Logo ve S Plus arasında boşluk bırak */
+        }
+
+        /* Logo ayarları */
+        .logo img {
+            height: 60px; /* Logonun yüksekliği */
+            width: auto; /* Orantılı genişlik */
+            margin-right: 20px; /* Logoyla S Plus yazısı arasında boşluk */
+        }
+
+        /* S Plus yazısı */
+        .nav_links {
+            flex-grow: 1; /* Boş alanı kapla */
+            text-align: center; /* Ortala */
+            position: relative; /* Pozisyon ayarı için */
+        }
+
+            .nav_links a {
+                color: #00792c; /* Yazıyı yeşil yap */
+                text-decoration: none; /* Alt çizgiyi kaldır */
+                font-size: 24px; /* Yazı boyutu */
+                font-weight: bold;
+                list-style: none; /* Başındaki siyah noktayı kaldır */
+            }
+
+        /* Dropdown menü ayarları */
+        .dropdown-menu {
+            display: none; /* Başlangıçta gizli */
+            position: absolute;
+            top: 100%; /* Aşağı doğru açılacak */
+            left: 0; /* Soldan başla */
+            right: 0; /* Sağdan bitir */
+            background-color: #f0f0f0; /* Açık gri arka plan */
+            padding: 10px; /* İç boşluk */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Gölge efekti */
+            z-index: 1; /* Diğer elemanların üstünde görünsün */
+        }
+
+        /* Dropdown açıldığında */
+        .nav_links li:hover .dropdown-menu {
+            display: block; /* Üzerine gelindiğinde menüyü göster */
+        }
+    </style>
 </head>
 <body>
-    <div class="main-container">
-        <!-- Sol Panel -->
-        <div class="sidebar">
-            <ul>
-                <a href="@Url.Action("Yönetim", "Home")">Yönetim Sayfasına Git</a>
-                <li><a href="#">Maaliyet Yönetimi</a></li>
-                <li><a href="#">Satış & Pazarlama Yönetimi</a></li>
-                 <li><a href="#">Üretim Yönetimi</a></li>
-                  <li><a href="#">Kalite Yönetimi</a></li>
-                   <li><a href="#">Hammadde Yönetimi</a></li>
-                    <li><a href="#">Admin Paneli</a></li>
-            </ul>
-        </div>
+    <h1>Hoş Geldiniz</h1>
 
-        <!-- Ana İçerik Alanı -->
-       @*  <div class="content">
-            <h1>Ana Sayfa</h1>
-            <p>Burası ana sayfanızın içeriği olacak.</p>
-        </div> *@
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success">
+            @TempData["SuccessMessage"]
+        </div>
+    }
+
+    @if (ViewBag.ErrorMessage != null)
+    {
+        <div class="alert alert-danger">
+            @ViewBag.ErrorMessage
+        </div>
+    }
+
+    <div class="navbar">
+        <div class="logo">
+            <img src="~/images/logo.png" alt="Logo" />
+        </div>
+        <ul class="nav_links">
+            <li>
+                <a href="#">S Plus</a>
+                <!-- Dropdown menü -->
+                <div class="dropdown-menu">
+                    <ul>
+                        <li><a href="#">Yönetim Raporları</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
     </div>
 </body>
 </html>
-
-
-@if (ViewBag.ErrorMessage != null)
-{
-    <div class="alert alert-danger">
-        @ViewBag.ErrorMessage
-    </div>
-}

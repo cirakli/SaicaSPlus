@@ -88,7 +88,8 @@ input[type="text"], input[type="password"] {
 button {
     width: 100%;
     padding: 0px; /* Buton iç boşluğu */
-    background-color: #4CAF50; /* Buton rengi */
+    background-color: #00792c; /* Buton rengi */
+
     color: black; /* Yazı rengi */
     border: none; /* Kenar yok */
     border-radius: 4px; /* Kenar yuvarlama */

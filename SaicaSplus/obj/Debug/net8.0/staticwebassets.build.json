@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "pNlxuWA4iu5fXTsvEnsISAOE3ipMJmIH10JeA1UV3/w=",
+  "Hash": "6QfYHn4YZF7D8HGKD787/xSht8bTQJJP89JQqiCkRXE=",
   "Source": "SaicaSplus",
   "BasePath": "_content/SaicaSplus",
   "Mode": "Default",
@@ -110,6 +110,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\images\\home.png",
+      "SourceId": "SaicaSplus",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\",
+      "BasePath": "_content/SaicaSplus",
+      "RelativePath": "images/home.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\home.png"
     },
     {
       "Identity": "C:\\proje\\SaicaSplus\\SaicaSplus\\wwwroot\\images\\logo.png",

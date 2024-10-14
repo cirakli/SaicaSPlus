@@ -54,4 +54,12 @@ public class AccountController : Controller
         }
     }
 
+    public ActionResult Logout()
+    {
+        // Perform logout logic (e.g., clearing session, authentication cookie)
+        // Redirect to the login view after logging out
+        return RedirectToAction("Login", "Account");
+    }
+
+
 }

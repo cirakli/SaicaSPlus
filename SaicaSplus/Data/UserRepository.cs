@@ -43,6 +43,7 @@ public class UserRepository
 
             // İlk olarak kullanıcının ID'sini almak için sorgu
             var userId = (int?)null;
+            var userad = (string?)null;
             var userIdCommand = new SqlCommand("SELECT s_user_id FROM s_user WHERE s_user_domain = '" + username + "'", connection);
             userIdCommand.Parameters.AddWithValue("@Username", username);
 
@@ -79,6 +80,32 @@ public class UserRepository
             return hasPermission;
         }
     }
+
+    public (string FirstName, string LastName) GetUserDetails(string username)
+    {
+        string firstName = string.Empty;
+        string lastName = string.Empty;
+
+        using (var connection = new SqlConnection(_connectionString))
+        {
+            connection.Open();
+
+            var command = new SqlCommand("SELECT s_user_ad, s_user_soyad FROM s_user WHERE s_user_domain = @Username", connection);
+            command.Parameters.AddWithValue("@Username", username);
+
+            using (var reader = command.ExecuteReader())
+            {
+                if (reader.Read())
+                {
+                    firstName = reader["s_user_ad"].ToString();
+                    lastName = reader["s_user_soyad"].ToString();
+                }
+            }
+        }
+
+        return (firstName, lastName);
+    }
+
 
 
 }

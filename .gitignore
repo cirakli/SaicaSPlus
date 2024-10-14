@@ -5,3 +5,6 @@
 /SaicaSplus/SaicaSplus.csproj
 
 .vs/
+/SaicaSplus/wwwroot/css/Index.css
+/SaicaSplus/wwwroot/images/home.png
+/SaicaSplus/bin/Debug/net8.0/SaicaSplus.dll

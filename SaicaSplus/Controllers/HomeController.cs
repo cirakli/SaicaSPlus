@@ -18,6 +18,17 @@ namespace SaicaSplus.Controllers
 
         public IActionResult Index()
         {
+            // Kullanıcı adını oturumdan al
+            var username = HttpContext.Session.GetString("Username");
+
+            if (username != null)
+            {
+                // Kullanıcı bilgilerini al
+                var userDetails = _userRepository.GetUserDetails(username);
+                ViewBag.FirstName = userDetails.FirstName;
+                ViewBag.LastName = userDetails.LastName;
+            }
+
             return View();
         }
 

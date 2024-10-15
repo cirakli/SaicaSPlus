@@ -37,7 +37,6 @@ namespace SaicaSplus.Controllers
             return View();
         }
 
-
         public IActionResult Yönetim()
         {
             var username = HttpContext.Session.GetString("Username");
@@ -72,5 +71,12 @@ namespace SaicaSplus.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+        public IActionResult Dashboard()
+        {
+            return View();
+        }
+
+
     }
 }

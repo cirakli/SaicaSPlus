@@ -11,11 +11,15 @@ var connectionString = builder.Configuration.GetConnectionString("SplusDb");
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(connectionString));
 
+builder.Configuration.AddUserSecrets<Program>(); // secret.json'ı ekleyin
+builder.Services.AddControllersWithViews(); // MVC veya Razor Pages için gerekli servisleri ekleme
+
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<UserRepository>(); // UserRepository servisini ekle
 builder.Services.AddScoped<ActiveDirectoryService>(); // ActiveDirectoryService servisini ekle
 builder.Services.AddScoped<YetkiServisi>(); // YetkiServisi DI olarak ekleniyor
+
 
 builder.Services.AddSession(); // Oturum yönetimini ekle
 
@@ -43,6 +47,8 @@ app.UseStaticFiles();
 app.UseRouting();
 app.UseAuthorization();
 app.UseSession(); // Oturum yönetimini kullan
+
+
 
 app.MapControllerRoute(
     name: "default",

@@ -441,6 +441,15 @@ C:\Users\asever\Documents\ASP Projeler\SaicaSplus\SaicaSplus\obj\Debug\net8.0\re
 C:\Users\asever\Documents\ASP Projeler\SaicaSplus\SaicaSplus\obj\Debug\net8.0\SaicaSplus.pdb
 C:\Users\asever\Documents\ASP Projeler\SaicaSplus\SaicaSplus\obj\Debug\net8.0\SaicaSplus.genruntimeconfig.cache
 C:\Users\asever\Documents\ASP Projeler\SaicaSplus\SaicaSplus\obj\Debug\net8.0\ref\SaicaSplus.dll
+C:\proje\SaicaSplus\SaicaSplus\obj\Debug\net8.0\SaicaSplus.csproj.AssemblyReference.cache
+C:\proje\SaicaSplus\SaicaSplus\obj\Debug\net8.0\SaicaSplus.GeneratedMSBuildEditorConfig.editorconfig
+C:\proje\SaicaSplus\SaicaSplus\obj\Debug\net8.0\SaicaSplus.AssemblyInfoInputs.cache
+C:\proje\SaicaSplus\SaicaSplus\obj\Debug\net8.0\SaicaSplus.AssemblyInfo.cs
+C:\proje\SaicaSplus\SaicaSplus\obj\Debug\net8.0\SaicaSplus.csproj.CoreCompileInputs.cache
+C:\proje\SaicaSplus\SaicaSplus\obj\Debug\net8.0\SaicaSplus.MvcApplicationPartsAssemblyInfo.cache
+C:\proje\SaicaSplus\SaicaSplus\obj\Debug\net8.0\SaicaSplus.RazorAssemblyInfo.cache
+C:\proje\SaicaSplus\SaicaSplus\obj\Debug\net8.0\SaicaSplus.RazorAssemblyInfo.cs
+C:\proje\SaicaSplus\SaicaSplus\obj\Debug\net8.0\SaicaSplus.sourcelink.json
 C:\proje\SaicaSplus\SaicaSplus\bin\Debug\net8.0\appsettings.Development.json
 C:\proje\SaicaSplus\SaicaSplus\bin\Debug\net8.0\appsettings.json
 C:\proje\SaicaSplus\SaicaSplus\bin\Debug\net8.0\SaicaSplus.staticwebassets.runtime.json
@@ -483,6 +492,7 @@ C:\proje\SaicaSplus\SaicaSplus\bin\Debug\net8.0\System.Composition.Hosting.dll
 C:\proje\SaicaSplus\SaicaSplus\bin\Debug\net8.0\System.Composition.Runtime.dll
 C:\proje\SaicaSplus\SaicaSplus\bin\Debug\net8.0\System.Composition.TypedParts.dll
 C:\proje\SaicaSplus\SaicaSplus\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\proje\SaicaSplus\SaicaSplus\bin\Debug\net8.0\System.Data.SqlClient.dll
 C:\proje\SaicaSplus\SaicaSplus\bin\Debug\net8.0\System.DirectoryServices.dll
 C:\proje\SaicaSplus\SaicaSplus\bin\Debug\net8.0\System.DirectoryServices.AccountManagement.dll
 C:\proje\SaicaSplus\SaicaSplus\bin\Debug\net8.0\System.DirectoryServices.Protocols.dll
@@ -558,21 +568,17 @@ C:\proje\SaicaSplus\SaicaSplus\bin\Debug\net8.0\runtimes\win-arm\native\Microsof
 C:\proje\SaicaSplus\SaicaSplus\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
 C:\proje\SaicaSplus\SaicaSplus\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
 C:\proje\SaicaSplus\SaicaSplus\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\proje\SaicaSplus\SaicaSplus\bin\Debug\net8.0\runtimes\win-arm64\native\sni.dll
+C:\proje\SaicaSplus\SaicaSplus\bin\Debug\net8.0\runtimes\win-x64\native\sni.dll
+C:\proje\SaicaSplus\SaicaSplus\bin\Debug\net8.0\runtimes\win-x86\native\sni.dll
+C:\proje\SaicaSplus\SaicaSplus\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\proje\SaicaSplus\SaicaSplus\bin\Debug\net8.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\proje\SaicaSplus\SaicaSplus\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.DirectoryServices.dll
 C:\proje\SaicaSplus\SaicaSplus\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.DirectoryServices.AccountManagement.dll
 C:\proje\SaicaSplus\SaicaSplus\bin\Debug\net8.0\runtimes\linux\lib\net8.0\System.DirectoryServices.Protocols.dll
 C:\proje\SaicaSplus\SaicaSplus\bin\Debug\net8.0\runtimes\osx\lib\net8.0\System.DirectoryServices.Protocols.dll
 C:\proje\SaicaSplus\SaicaSplus\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.DirectoryServices.Protocols.dll
 C:\proje\SaicaSplus\SaicaSplus\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Runtime.Caching.dll
-C:\proje\SaicaSplus\SaicaSplus\obj\Debug\net8.0\SaicaSplus.csproj.AssemblyReference.cache
-C:\proje\SaicaSplus\SaicaSplus\obj\Debug\net8.0\SaicaSplus.GeneratedMSBuildEditorConfig.editorconfig
-C:\proje\SaicaSplus\SaicaSplus\obj\Debug\net8.0\SaicaSplus.AssemblyInfoInputs.cache
-C:\proje\SaicaSplus\SaicaSplus\obj\Debug\net8.0\SaicaSplus.AssemblyInfo.cs
-C:\proje\SaicaSplus\SaicaSplus\obj\Debug\net8.0\SaicaSplus.csproj.CoreCompileInputs.cache
-C:\proje\SaicaSplus\SaicaSplus\obj\Debug\net8.0\SaicaSplus.MvcApplicationPartsAssemblyInfo.cache
-C:\proje\SaicaSplus\SaicaSplus\obj\Debug\net8.0\SaicaSplus.RazorAssemblyInfo.cache
-C:\proje\SaicaSplus\SaicaSplus\obj\Debug\net8.0\SaicaSplus.RazorAssemblyInfo.cs
-C:\proje\SaicaSplus\SaicaSplus\obj\Debug\net8.0\SaicaSplus.sourcelink.json
 C:\proje\SaicaSplus\SaicaSplus\obj\Debug\net8.0\staticwebassets.build.json
 C:\proje\SaicaSplus\SaicaSplus\obj\Debug\net8.0\staticwebassets.development.json
 C:\proje\SaicaSplus\SaicaSplus\obj\Debug\net8.0\staticwebassets\msbuild.SaicaSplus.Microsoft.AspNetCore.StaticWebAssets.props

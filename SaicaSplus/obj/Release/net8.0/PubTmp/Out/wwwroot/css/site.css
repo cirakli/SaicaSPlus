@@ -1,0 +1,176 @@
+﻿/* Sayfa ve form genel ayarları */
+body, html {
+    height: 100%; /* Sayfanın tamamını kapsasın */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #eee9e9; /* Arka plan rengini beyaz yap */
+    background-image: url('/images/proje_back.jpg'); /* Arka plan resmi */
+    background-size: 600px 600px;
+    background-position: center; /* Resmi ortala */
+    background-repeat: no-repeat; /* Tekrar etme */
+}
+
+
+
+/* Gölgeyi Kaldır*/
+.login-container,
+.login-container,
+form {
+    box-shadow : none !important;
+    border : none !important;
+    background-color : transparent !important;
+}
+
+/* Giriş alanı ayarları */
+.login-container {
+    display: flex;
+    flex-direction: column; /* Elemanları dikey sırada tut */
+    justify-content: center; /* Yatayda ortala */
+    align-items: center; /* Dikeyde ortala */
+    height: 100vh; /* Tam ekran yüksekliği */
+    background-color: rgba(255, 255, 255, 0.8); /* Arka plan rengi beyaz ve saydamlık ekle */
+    border-radius: 8px; /* Kenarları yuvarlaştır */
+    padding: 20px; /* İçerik için biraz alan bırak */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Gölge ekle */
+}
+
+
+
+/* Diğer stiller... */
+.logo-container {
+    margin-bottom: -15px; /* Logo ile form arasına boşluk ekle */
+}
+
+.company-logo {
+    max-width: 150px; /* Logonun genişliğini ayarla */
+    height: auto; /* Yükseklik, genişliğe göre ayarlanacak */
+}
+
+/* Giriş formunun stilini ayarla */
+.login-form {
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; /* Genişlik sınırı */
+    display: flex; /* Flex konteyner olarak ayarlayın */
+    flex-direction: column; /* Dikey sırada yerleştir */
+    align-items: center; /* Yatayda ortala */
+}
+
+.form-group {
+    display: flex; /* Flexbox kullan */
+    flex-direction: column; /* Dikey sırada yerleştir */
+    align-items: center; /* Yatayda ortala */
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: center; /* Yazıyı yatayda ortala */
+}
+
+input[type="text"], input[type="password"] {
+    width: 70%; /* Alanların genişliğini ayarla */
+    height: 10px; /* Yüksekliği 10px olarak ayarlayın */
+    padding: 10px; /* İç boşluğu ayarlayın */
+    font-size: 16px; /* Yazı boyutunu ayarlayın */
+    border: 1px solid #000; /* Kenar rengi */
+    border-radius: 4px; /* Kenar yuvarlama */
+    background-color: transparent;
+}
+
+button {
+    width: 100%;
+    padding: 0px; /* Buton iç boşluğu */
+    background-color: #00792c; /* Buton rengi */
+
+    color: black; /* Yazı rengi */
+    border: none; /* Kenar yok */
+    border-radius: 4px; /* Kenar yuvarlama */
+    cursor: pointer; /* İmleç şekli */
+    font-size: 14px; /* Yazı boyutu */
+}
+
+.ana-container {
+    display: flex; /* Flexbox kullan */
+    justify-content: center; /* Yatayda ortala */
+    align-items: center; /* Dikeyde ortala */
+    height: 100vh; /* Tüm sayfa yüksekliği */
+}
+
+.yazi-container {
+    margin-bottom: -35px; /* Logo ile form arasına boşluk ekle */
+    width: 100%;
+    padding: 0px; /* Buton iç boşluğu */
+    color: black; /* Yazı rengi */
+    border: none; /* Kenar yok */
+    border-radius: 4px; /* Kenar yuvarlama */
+    cursor: pointer; /* İmleç şekli */
+    font-size: 14px; /* Yazı boyutu */
+    text-align: center; /* Yazıyı ortala */
+}
+
+    button:hover {
+        background-color: #45a049; /* Hover durumunda biraz koyulaşsın */
+    }
+
+input::placeholder {
+    color: black;
+    font-style: italic; /* İtalik yazı stili */
+}
+
+/* Kullanıcı adı ve şifre alanına tıklandığında placeholder'ı gizle */
+input:focus::placeholder {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Kullanıcı adı ve şifre alanlarından ayrıldığında placeholder'ı tekrar göster */
+input::placeholder {
+    opacity: 1; /* Placeholder varsayılan durumda görünür olsun */
+    transition: opacity 0.3s ease; /* Yumuşak geçiş efekti */
+}
+
+/* Hata ve başarı mesajları */
+.alert {
+    margin-top: 1px;
+    padding: 1px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.alert-danger {
+    background-color: #eee9e9;
+    color: #000000;
+    border: 1px solid #eee9e9;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+/* Giriş formunu ortalamak için ayarlar */
+.login-container {
+    max-width: 150px; /* İstediğiniz genişlik */
+    margin: 0 auto; /* Ortala */
+    padding: 0px; /* İçerik için biraz alan bırak */
+    border-radius: 8px; /* Kenarları yuvarlaştır */
+    position: relative; /* Diğer stillerle uyumlu olmasını sağlamak için */
+}
+
+
+
+/* Giriş Yap butonunun boyutunu küçültme */
+button[type="submit"] {
+    width: 100px; /* Genişlik */
+    height: 25px; /* Yükseklik */
+}
+

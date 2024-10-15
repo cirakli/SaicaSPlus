@@ -76,6 +76,10 @@
               "target": "Package",
               "version": "[1.0.0, )"
             },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.6, )"
+            },
             "System.DirectoryServices.AccountManagement": {
               "target": "Package",
               "version": "[8.0.0, )"

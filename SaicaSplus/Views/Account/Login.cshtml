@@ -1,58 +1,110 @@
-﻿
-@{
-    ViewData["Title"] = "Giriş";
+﻿@{
+    Layout = null; // Layout'u iptal et
+    ViewData["Title"] = "Giriş Yap"; // Sayfa başlığı
 }
-<div class="login-container">
-    <!-- Şirket Logosu -->
-    <div class="logo-container">
-        <img src="/images/logo.png" alt="Şirket Logosu" class="company-logo">
 
-    </div>
-    <link rel="stylesheet" type="text/css" href="~/css/site.css">
-
-    <!-- Splus Yazısı -->
-    <div class="yazi-container">
-        <h1>S-Plus</h1>
-
-    </div>
-    <link rel="stylesheet" type="text/css" href="~/css/site.css">
-
-
-
-    <form asp-action="Login" method="post" class="login-form">
-        <div class="form-group">
-          @*   <label for="username">Kullanıcı Adı</label> *@
-            <input type="text" name="username" id="username" class="form-control" placeholder="Kullanıcı Adı" required />
-        </div>
-        <div class="form-group">
-            @* <label for="password">Şifre</label> *@
-            <input type="password" name="password" id="password" class="form-control" placeholder="Şifre" required />
-        </div>
-        <button type="submit" class="btn btn-primary">Giriş Yap</button>
-    </form>
-
-    @if (ViewBag.ErrorMessage != null)
-    {
-        <div class="alert alert-danger">
-            @ViewBag.ErrorMessage
-        </div>
-    }
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/site.css"> <!-- Genel CSS dosyası -->
+    <link rel="stylesheet" href="~/css/Login.css"> <!-- Login sayfası için özel CSS dosyası -->
     <style>
-    body {
-        background-image: url('/images/proje_003.jpg'); /* Giriş sayfası arka planı */
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-</style>
+        body {
+            background-image: url('/images/proje_003.jpg'); /* Giriş sayfası arka planı */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
 
+        .login-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Ortalamak için */
+            justify-content: center; /* Ortalamak için */
+            height: 100vh; /* Tam yüksekliği kaplamak için */
+            color: white; /* Yazı rengi */
+            text-align: center; /* Ortalamak için */
+        }
 
-   @*  @if (TempData["SuccessMessage"] != null)
-    {
-        <div class="alert alert-success">
-            @TempData["SuccessMessage"]
+        .company-logo {
+            width: 150px; /* Logonun genişliği */
+            margin-bottom: 20px; /* Logo ile yazı arasında boşluk */
+        }
+
+        .yazi-container h1 {
+            font-size: 36px; /* S-Plus yazısının boyutu */
+            margin-bottom: 20px; /* Yazı ile form arasında boşluk */
+        }
+
+        .login-form {
+            width: 300px; /* Form genişliği */
+            background-color: rgba(0, 0, 0, 0.5); /* Form arka planı yarı saydam */
+            padding: 20px; /* Form içindeki boşluk */
+            border-radius: 10px; /* Köşeleri yuvarlamak için */
+        }
+
+        .form-group {
+            margin-bottom: 15px; /* Form elemanları arasındaki boşluk */
+        }
+
+        .btn-primary {
+            background-color: #00792c; /* Buton rengi */
+            color: white; /* Buton yazı rengi */
+            border: none; /* Kenar çizgisi kaldır */
+            padding: 10px 20px; /* Buton içindeki boşluk */
+            border-radius: 5px; /* Buton köşe yuvarlama */
+            cursor: pointer; /* Fare işaretçisi */
+        }
+
+        .alert {
+            margin-top: 15px; /* Uyarı mesajı ile form arasındaki boşluk */
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <!-- Şirket Logosu -->
+        <div class="logo-container">
+            <img src="/images/logo.png" alt="Şirket Logosu" class="company-logo">
         </div>
-    } *@
 
-</div>
+        <!-- Splus Yazısı -->
+        <div class="yazi-container">
+            <h1>S-Plus</h1>
+        </div>
 
+        <!-- Giriş Formu -->
+        <form asp-action="Login" method="post" class="login-form">
+            <div class="form-group">
+                <input type="text" name="username" id="username" class="form-control" placeholder="Kullanıcı Adı" required />
+            </div>
+            <div class="form-group">
+                <input type="password" name="password" id="password" class="form-control" placeholder="Şifre" required />
+            </div>
+            <button type="submit" class="btn btn-primary">Giriş Yap</button>
+        </form>
+
+        <!-- Hata mesajı -->
+        @if (ViewBag.ErrorMessage != null)
+        {
+            <div class="alert alert-danger">
+                @ViewBag.ErrorMessage
+            </div>
+        }
+
+        @* Başarı mesajı için (isteğe bağlı) *@
+        @* if (TempData["SuccessMessage"] != null)
+        {
+        <div class="alert alert-success">
+        @TempData["SuccessMessage"]
+        </div>
+        } *@
+    </div>
+
+    <!-- JavaScript dosyanız -->
+    <script src="~/js/scripts.js"></script>
+</body>
+</html>

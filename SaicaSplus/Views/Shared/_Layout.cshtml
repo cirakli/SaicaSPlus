@@ -1,32 +1,275 @@
-﻿ 
-<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE html>
+<html lang="tr">
 <head>
-    <meta charset="utf-8" />
-     <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
-     <title>@ViewData["Title"] - SaicaSplus</title> 
-    <link rel="stylesheet" href="~/css/site.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/Index.css"> <!-- CSS dosyanız -->
+    <style>
+        body {
+            background-color: white; /* Ana sayfa için arka plan rengi */
+            background-image: none; /* Arka plan resmini kaldır */
+        }
+
+        /* Üst panel için genel ayarlar */
+        h1 {
+            background-color: #00792c; /* Yeşil panel rengi */
+            color: white;
+            text-align: center; /* Ortala */
+            padding: 30px;
+            margin: 0; /* Tüm boşlukları kaldır */
+            width: 100%; /* Tüm genişliği kaplar */
+            box-sizing: border-box; /* Tüm padding ve border hesaba katılır */
+            border-top-left-radius: 10px; /* Sol üst köşeyi yuvarla */
+            border-top-right-radius: 10px; /* Sağ üst köşeyi yuvarla */
+        }
+
+        /* Navbar ayarları */
+        .navbar {
+            display: flex; /* Flexbox ile hizalama */
+            align-items: center; /* Dikey hizalama */
+            background-color: white; /* Arka planı beyaz yap */
+            padding: 10px 20px; /* İç boşluklar */
+            box-sizing: border-box;
+            justify-content: space-between; /* Logo ve S Plus arasında boşluk bırak */
+        }
+
+        /* Logo ayarları */
+        .logo img {
+            height: 60px; /* Logonun yüksekliği */
+            width: auto; /* Orantılı genişlik */
+            margin-right: 20px; /* Logoyla S Plus yazısı arasında boşluk */
+        }
+
+        /* S Plus yazısı */
+        .nav_links {
+            flex-grow: 1; /* Boş alanı kapla */
+            text-align: center; /* Ortala */
+            position: relative; /* Pozisyon ayarı için */
+            list-style: none; /* Başındaki siyah noktayı (bullet) kaldır */
+        }
+
+            .nav_links a {
+                color: #00792c; /* Yazıyı yeşil yap */
+                text-decoration: none; /* Alt çizgiyi kaldır */
+                font-size: 35px; /* Yazı boyutu */
+                font-weight: bold;
+                list-style: none; /* Başındaki siyah noktayı kaldır */
+            }
+
+        /* Dropdown menü ayarları */
+        .dropdown-menu {
+            display: none; /* Başlangıçta gizli */
+            position: absolute;
+            top: 100%; /* Aşağı doğru açılacak */
+            left: 0; /* Soldan başla */
+            right: 0; /* Sağdan bitir */
+            background-color: #f0f0f0; /* Açık gri arka plan */
+            padding: 10px; /* İç boşluk */
+            z-index: 1; /* Diğer elemanların üstünde görünsün */
+        }
+
+        /* Dropdown açıldığında */
+        .nav_links li:hover .dropdown-menu {
+            display: block; /* Üzerine gelindiğinde menüyü göster */
+        }
+
+        /* Kullanıcı işlemleri açılır menüsü ayarları */
+        .user-dropdown-menu {
+            display: none; /* Başlangıçta gizli */
+            position: absolute;
+            top: 100%; /* Home resminin altına açılacak */
+            right: 0; /* Sağdan başla */
+            background-color: #00792c; /* Arka plan rengi */
+            padding: 20px; /* İç boşluk */
+            z-index: 1; /* Diğer elemanların üstünde görünsün */
+            width: 120px; /* Genişlik ayarı */
+            text-align: left; /* Yazıları sola hizala */
+        }
+
+
+            /* Açılır menü içindeki bağlantıların stilleri */
+            .user-dropdown-menu a {
+                color: white; /* Yazı rengini beyaz yap */
+                font-family: Arial, sans-serif; /* Yazı fontunu değiştir */
+                font-size: 12px; /* Yazı boyutunu küçült */
+                text-decoration: none; /* Alt çizgiyi kaldır */
+                display: block; /* Her bağlantıyı blok olarak ayarla */
+                padding: 0px 0; /* Üst ve alt boşlukları ayarla */
+            }
+
+
+
+                /* Bağlantılara işaret ekleme */
+                .user-dropdown-menu a::before {
+                    content: "• "; /* İşaret olarak nokta kullan */
+                    color: white; /* İşaretin rengi beyaz */
+                    font-weight: bold; /* İşaretin kalınlığı */
+                    margin-right: 5px; /* İşaret ile yazı arasındaki boşluk */
+                }
+
+
+
+        /* Home resmine tıklandığında açılacak */
+        .user-info:hover .user-dropdown-menu {
+            display: block; /* Üzerine gelindiğinde menüyü göster */
+        }
+
+
+        /* İkinci dropdown menü ayarları */
+        .sub-dropdown-menu {
+            display: none; /* Başlangıçta gizli */
+            position: absolute;
+            top: 100%; /* Aşağı doğru açılacak */
+            left: 0; /* Soldan başla */
+            background-color: #f0f0f0; /* Açık gri arka plan */
+            padding: 5px; /* İç boşluk */
+            z-index: 2; /* Daha üstte görünmesi için */
+            width: 300px; /* Genişlik ayarı (istediğiniz değeri buraya yazın) */
+            text-align: left; /* Yazıları sola hizala */
+        }
+
+        /* İlk dropdown menü açıldığında ikinci dropdown menüyü göster */
+        .dropdown-menu li:hover .sub-dropdown-menu {
+            display: block; /* Üzerine gelindiğinde alt menüyü göster */
+        }
+
+
+        /* İkinci dropdown menü öğeleri için işaret ekleme */
+        .sub-dropdown-menu ul {
+            padding-left: 20px; /* Sol boşluk vererek işaret ve yazı arasındaki mesafeyi ayarlayın */
+        }
+
+            .sub-dropdown-menu ul li::before {
+                content: "• "; /* İşaret olarak nokta kullanma */
+                color: #00792c; /* İşaretin rengi */
+                font-weight: bold; /* İşaretin kalınlığı */
+                margin-right: 5px; /* İşaret ile yazı arasındaki boşluk */
+            }
+
+    </style>
 </head>
 <body>
-    <header>
-         <nav class="navbar navbar-expand-sm navbar-light bg-light"> 
-            
-             
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav mr-auto">
-                   
-                </ul>
+    <h1 style="font-size:18px; font-family: Arial, sans-serif; text-align: right; background-color: #00792c; color: white; padding: 25px;">
+        Hoş Geldiniz &nbsp  @ViewBag.FirstName @ViewBag.LastName
+        <span class="user-info" style="position: relative; display: inline-block;">
+            <img src="~/images/home.png" alt="Home" style="cursor: pointer; width: 30px; height: 30px; margin-left: 5px;" /> <!-- Home resmi -->
+            <!-- Kullanıcı işlemleri açılır menüsü -->
+            <div class="user-dropdown-menu">
+                <a href="#">Admin Paneli</a><br />
+                <a href="https://servicedesk.saica.com/CherwellPortal">Cherwell Portal</a><br />
+                <a href="https://mypassword.saica.com/gcor/login">Şifre Değiştirme</a><br />
+                <a href="@Url.Action("Logout", "Account")">Çıkış</a>
             </div>
-        </nav>
-    </header>
+        </span>
+    </h1>
 
-     <div class="container">
-        @RenderBody()
+    @if (ViewBag.ErrorMessage != null)
+    {
+        <div class="alert alert-danger">
+            @ViewBag.ErrorMessage
+        </div>
+    }
+
+    <div class="navbar">
+        <div class="logo">
+            <img src="~/images/logo.png" alt="Logo" />
+        </div>
+        <ul class="nav_links">
+            <li>
+                <a href="#">S Plus</a>
+                <!-- Dropdown menü (Ortada) -->
+                <div class="dropdown-menu">
+                    <ul>
+                        <!-- Yönetim Raporları  -->
+                        <li>
+                            <a href="#">Yönetim Raporları</a>
+                            <!-- İkinci dropdown menü -->
+                            <div class="sub-dropdown-menu">
+                                <ul>
+                                    <li><a href="@Url.Action("Dashboard", "Home")">Dashboard</a></li>
+                                    <li><a href="#">Benchmark Deadline</a></li>
+                                    <li><a href="#">Header KPI</a></li>
+                                    <li><a href="#">Kağıt Stok Detay Raporu</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <!-- Maliyet Yönetimi  -->
+                        <li>
+                            <a href="#">Maliyet Yönetimi</a>
+                            <div class="sub-dropdown-menu">
+                                <ul>
+                                    <li><a href="#">Kağıt Fiyatları</a></li>
+                                    <li><a href="#">Makine Fire Değerleri</a></li>
+                                    <li><a href="#">Mürekkep Fiyatları</a></li>
+                                    <li><a href="#">Palet Fiyatları</a></li>
+                                    <li><a href="#">Makine Giderleri</a></li>
+                                    <li><a href="#">Parametrik Giderler</a></li>
+                                    <li><a href="#">Ondüle Fiyatları</a></li>
+                                    <li><a href="#">Nakliye Giderleri</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+
+                        <!-- Satış ve Pazarlama Yönetimi Alt Menü -->
+                        <li>
+                            <a href="#">Satış ve Pazarlama Yönetimi</a>
+                            <div class="sub-dropdown-menu">
+                                <ul>
+                                    <li><a href="#">Termin Kontrol Raporu</a></li>
+                                    <li><a href="#">Satış Fiyatı Kontrol Raporu</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <!-- Üretim Yönetimi -->
+                        <li>
+                            <a href="#">Üretim Yönetimi</a>
+                            <div class="sub-dropdown-menu">
+                                <ul>
+                                    <li><a href="#">Oluklu Ebat Değişikliği</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+
+                        <!-- Kalite Yönetimi -->
+                        <li>
+                            <a href="#">Kalite Yönetimi</a>
+                            <div class="sub-dropdown-menu">
+                                <ul>
+                                    <li><a href="#">Ürün Test İstekleri</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+
+                        <!-- Hammadde Yönetimi -->
+                        <li>
+                            <a href="#">Hammadde Yönetimi</a>
+                            <div class="sub-dropdown-menu">
+                                <ul>
+                                    <li><a href="#">Kağıt Simülasyonu</a></li>
+                                    <li><a href="#">Bobin Girişi Fire Raporu</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </li>
+        </ul>
     </div>
 
-  
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js"></script>
+    <!-- Sayfa içeriğinin yerleştirileceği alan -->
+    <main>
+        @RenderBody() <!-- Burada RenderBody ile sayfa içeriğini yerleştirin -->
+    </main>
+
+    <!-- JavaScript dosyanız -->
+    <script src="~/js/scripts.js"></script>
 </body>
-</html> 
+</html>

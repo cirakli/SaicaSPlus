@@ -75,11 +75,12 @@ label {
     text-align: center; /* Yazıyı yatayda ortala */
 }
 
+
 input[type="text"], input[type="password"] {
-    width: 70%; /* Alanların genişliğini ayarla */
-    height: 10px; /* Yüksekliği 10px olarak ayarlayın */
+    width: 100%; /* Alanların genişliğini ayarla */
+    height: 16px; /* Yüksekliği 10px olarak ayarlayın */
     padding: 10px; /* İç boşluğu ayarlayın */
-    font-size: 16px; /* Yazı boyutunu ayarlayın */
+    font-size: 10px; /* Yazı boyutunu ayarlayın */
     border: 1px solid #000; /* Kenar rengi */
     border-radius: 4px; /* Kenar yuvarlama */
     background-color: transparent;
@@ -120,21 +121,38 @@ button {
         background-color: #45a049; /* Hover durumunda biraz koyulaşsın */
     }
 
+/* Input elemanları için placeholder yazı boyutunu ayarlamak */
 input::placeholder {
-    color: black;
-    font-style: italic; /* İtalik yazı stili */
+    font-size: 14px; /* Burada istediğin boyutu ayarlayabilirsin */
+    color: black; /* İsteğe bağlı: Placeholder rengi */
+    font-style: italic; /* İsteğe bağlı: İtalik stil */
+}
+/* Ekstra olarak, input elemanlarının font boyutunu ayarlamak */
+input {
+    width: 100%; /* Genişliği %100 yaparak tam kapsama sağla */
+    height: 40px; /* Yüksekliği artırarak daha fazla alan kaplasın */
+    font-size: 14px; /* Yazı boyutunu ayarla */
+    padding: 10px; /* İç boşluk ekleyerek görünümü güzelleştir */
+    border-radius: 4px; /* Kenarları yuvarla */
+    border: 1px solid #ccc; /* Kenar rengi */
+}
+.form-group {
+    margin-bottom: 20px; /* Form grubu arasına boşluk ekle */
 }
 
 /* Kullanıcı adı ve şifre alanına tıklandığında placeholder'ı gizle */
 input:focus::placeholder {
     opacity: 0;
     transition: opacity 0.3s ease;
+    font-size: 20px; /* Burada istediğin boyutu ayarlayabilirsin */
+    font-style: italic;
 }
 
 /* Kullanıcı adı ve şifre alanlarından ayrıldığında placeholder'ı tekrar göster */
 input::placeholder {
     opacity: 1; /* Placeholder varsayılan durumda görünür olsun */
     transition: opacity 0.3s ease; /* Yumuşak geçiş efekti */
+    font-size: 14px; /* Burada istediğin boyutu ayarlayabilirsin */
 }
 
 /* Hata ve başarı mesajları */

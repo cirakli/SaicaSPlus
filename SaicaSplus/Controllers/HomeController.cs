@@ -32,20 +32,25 @@ namespace SaicaSplus.Controllers
             return View();
         }
 
-        public IActionResult Login()
+        public IActionResult Dashboard()
         {
-            return View();
-        }
-
-        public IActionResult Yönetim()
-        {
+            // Kullanıcı adını oturumdan al
             var username = HttpContext.Session.GetString("Username");
+
+            if (username != null)
+            {
+                // Kullanıcı bilgilerini al
+                var userDetails = _userRepository.GetUserDetails(username);
+                ViewBag.FirstName = userDetails.FirstName;
+                ViewBag.LastName = userDetails.LastName;
+            }
+            
             if (username == null)
             {
                 return RedirectToAction("Login", "Account");
             }
 
-            if (_userRepository.HasPermission(username, "yönetim"))
+            if (_userRepository.HasPermission(username, "Dashboard"))
             {
                 return View();
             }
@@ -54,6 +59,15 @@ namespace SaicaSplus.Controllers
                 ViewBag.ErrorMessage = "Yetkiniz bulunmamaktadır.";
                 return RedirectToAction("yetki_yok");
             }
+
+            return View();
+        }
+
+
+
+        public IActionResult Login()
+        {
+            return View();
         }
 
         public IActionResult Privacy()
@@ -72,11 +86,7 @@ namespace SaicaSplus.Controllers
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
 
-        public IActionResult Dashboard()
-        {
-            return View();
-        }
-
+    
 
     }
 }

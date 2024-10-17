@@ -1,0 +1,59 @@
+﻿@{
+    ViewBag.Title = "Dashboard";
+    Layout = "_Layout"; // Layout dosyası burada
+    ViewData["Title"] = "Dashboard";
+}
+
+<h2>Dashboard</h2>
+
+@model SaicaSplus.Models.DashboardViewModel
+
+<div>
+    <h2>Üretim Miktarı</h2>
+    <p>@Model.Makine_KG</p>
+
+    <h2>Kağıt Stok</h2>
+    <p>@Model.ESK_Kagit_stok</p>
+
+    <h2>Kağıt Sarf</h2>
+    <p>@Model.ESK_kagit_sarf</p>
+
+    <h2>BHS Üretim Miktarı</h2>
+    <p>@Model.BHS_KG</p>
+
+    <h2>SAK Deliveries m2</h2>
+    <p>@Model.ESK_SAK_SEVK</p>
+
+    <h2>SAK Deliveries TL</h2>
+    <p>@Model.ESK_SAK_SEVK_TL</p>
+
+    <h2>Monthly Open Orders</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Sheet m2</th>
+                <th>Box m2</th>
+                <th>Merch m2</th>
+                <th>Total m2</th>
+                <th>Sheet TL</th>
+                <th>Box TL</th>
+                <th>Merch TL</th>
+                <th>Total TL</th>
+                <th>TL/m2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@Model.ESK_Sheet_m2</td>
+                <td>@Model.ESK_Box_m2</td>
+                <td>@Model.ESK_Merch_m2</td>
+                <td>@Model.ESK_Total_m2</td>
+                <td>@Model.ESK_Sheet_tl</td>
+                <td>@Model.ESK_Box_tl</td>
+                <td>@Model.ESK_Merch_tl</td>
+                <td>@Model.ESK_Total_tl</td>
+                <td>@Model.ESK_tl_m2</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

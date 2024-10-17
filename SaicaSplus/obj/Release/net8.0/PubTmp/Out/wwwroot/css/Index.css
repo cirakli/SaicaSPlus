@@ -1,0 +1,105 @@
+﻿body {
+    background-color: white;
+    background-image: none;
+}
+
+/* Navbar genel ayarları */
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+
+/* Logo ayarları */
+.logo img {
+    height: 60px;
+    width: auto;
+    margin-right: 20px;
+}
+
+/* S Plus yazısı ve menü */
+.nav_links {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+    .nav_links li {
+        position: relative;
+        margin: 0 15px;
+        display: inline-block; /* Yan yana dizilmesi için */
+    }
+
+    .nav_links a {
+        color: #00792c;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 10px;
+    }
+
+/* Dropdown menü ayarları */
+.dropdown-menu {
+    display: none; /* Başlangıçta gizli */
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80vw;
+    background-color: #f0f0f0;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    display: flex;
+    justify-content: space-around; /* Menüleri aynı satıra koy */
+    gap: 50px; /* Menü öğeleri arasında boşluk */
+}
+
+    .dropdown-menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+        .dropdown-menu ul li {
+            padding: 5px 0;
+        }
+
+            .dropdown-menu ul li a {
+                color: #00792c;
+                text-decoration: none;
+                font-size: 16px;
+            }
+
+/* Ana menü üzerine gelindiğinde dropdown'u göster */
+.nav_links li:hover .dropdown-menu {
+    display: flex;
+}
+
+/* Alt kırılım menülerin stilleri */
+.dropdown-menu .submenu {
+    display: none;
+    position: absolute;
+    left: 100%; /* Alt menü sağa açılacak */
+    top: 0;
+    background-color: #f0f0f0;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+/* Alt menü hover ile gösteriliyor */
+.dropdown-menu li:hover .submenu {
+    display: block;
+}
+
+/* Üst menü hover efekti */
+.nav_links li:hover > a {
+    color: #004d1a;
+}

@@ -29,7 +29,7 @@ public class AccountController : Controller
         if (isValidUser)
         {
             // SQL veritabanında kullanıcının var olup olmadığını kontrol et
-            var userDomains = _userRepository.GetUserDomains();
+            var userDomains = _userRepository.GetUserDomains(username);
 
             // Kullanıcı adı SQL veritabanında mevcut mu?
             if (userDomains.Contains(username))

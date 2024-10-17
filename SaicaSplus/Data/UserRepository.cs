@@ -7,21 +7,25 @@ public class UserRepository
     private readonly ApplicationDbContext _context;
     private readonly string _connectionString;
 
+
     public UserRepository(ApplicationDbContext context, IConfiguration configuration)
     {
         _context = context;
         _connectionString = configuration.GetConnectionString("SplusDb");
+        
     }
 
-    public List<string> GetUserDomains()
+    public List<string> GetUserDomains(string username)
     {
+
         var userDomains = new List<string>();
 
         using (var connection = new SqlConnection(_connectionString))
         {
             connection.Open();
 
-            var command = new SqlCommand("SELECT s_user_domain FROM s_user where aktif=1", connection);
+            var command = new SqlCommand("SELECT s_user_domain FROM s_user where aktif=1 and s_user_domain = '" + username + "' ", connection);
+            command.Parameters.AddWithValue("@Username", username); // Kullanıcı adını parametre olarak ekle
 
             using (var reader = command.ExecuteReader())
             {
@@ -30,56 +34,58 @@ public class UserRepository
                     userDomains.Add(reader.GetString(0));
                 }
             }
+
+            connection.Close();
         }
 
         return userDomains;
     }
 
-    public bool HasPermission(string username, string ekranAd)
+    public async Task<bool> HasPermission(string username, string ekranAd)
     {
+        if (string.IsNullOrWhiteSpace(username))
+        {
+            return false; // Kullanıcı adı geçersizse çık
+        }
+
         using (var connection = new SqlConnection(_connectionString))
         {
-            connection.Open();
+            await connection.OpenAsync();
 
-            // İlk olarak kullanıcının ID'sini almak için sorgu
-            var userId = (int?)null;
-            var userad = (string?)null;
+            // Kullanıcı ID'sini alma
             var userIdCommand = new SqlCommand("SELECT s_user_id FROM s_user WHERE s_user_domain = '" + username + "'", connection);
             userIdCommand.Parameters.AddWithValue("@Username", username);
 
-            var result = userIdCommand.ExecuteScalar();
-            if (result != null)
+            var result = await userIdCommand.ExecuteScalarAsync();
+            if (result == null)
             {
-                userId = Convert.ToInt32(result);
+                return false; // Kullanıcı adı bulunamadı
             }
 
-            if (userId == null) return false;
+            var userId = Convert.ToInt32(result);
 
-            // İkinci olarak ekran ID'sini almak için sorgu
-            var ekranId = (int?)null;
+            // Ekran ID'sini alma
             var ekranIdCommand = new SqlCommand("SELECT ekran_id FROM s_ekran WHERE ekran_ad = '" + ekranAd + "'", connection);
             ekranIdCommand.Parameters.AddWithValue("@EkranAd", ekranAd);
 
-            result = ekranIdCommand.ExecuteScalar();
-            if (result != null)
+            result = await ekranIdCommand.ExecuteScalarAsync();
+            if (result == null)
             {
-                ekranId = Convert.ToInt32(result);
+                return false; // Ekran bulunamadı
             }
 
-            if (ekranId == null) return false;
+            var ekranId = Convert.ToInt32(result);
 
-            // Son olarak yetki kontrolü
-            var hasPermission = false;
-            var permissionCommand = new SqlCommand("SELECT COUNT(*) FROM s_yetki WHERE  s_user_id = '" + userId + "' AND ekran_id = '" + ekranId + "' AND izin = 1", connection);
+            // Yetki kontrolü
+            var permissionCommand = new SqlCommand("SELECT COUNT(*) FROM s_yetki WHERE s_user_id = '" + userId + "' AND ekran_id = '" + ekranId + "' AND izin = 1", connection);
             permissionCommand.Parameters.AddWithValue("@UserId", userId);
             permissionCommand.Parameters.AddWithValue("@EkranId", ekranId);
 
-            var count = (int)permissionCommand.ExecuteScalar();
-            hasPermission = count > 0;
-
-            return hasPermission;
+            var count = (int)await permissionCommand.ExecuteScalarAsync();
+            return count > 0;
         }
     }
+
 
     public (string FirstName, string LastName) GetUserDetails(string username)
     {
@@ -101,11 +107,12 @@ public class UserRepository
                     lastName = reader["s_user_soyad"].ToString();
                 }
             }
+
+            connection.Close();
         }
 
         return (firstName, lastName);
     }
-
 
 
 }

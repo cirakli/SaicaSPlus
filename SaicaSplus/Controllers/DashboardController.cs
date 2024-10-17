@@ -1,0 +1,407 @@
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
+using System.Data.SqlClient;
+using System.Threading.Tasks;
+using Microsoft.Data.SqlClient;
+using SaicaSplus.Models;
+using System.Reflection.PortableExecutable;
+using System.Data;
+
+namespace SaicaSplus.Controllers
+{
+    public class DashboardController : Controller
+    {
+        private readonly string _connectionString;
+        private readonly UserRepository _userRepository;
+
+        public DashboardController(IConfiguration configuration, UserRepository userRepository)
+        {
+            _connectionString = configuration.GetConnectionString("SplusDb");
+            _userRepository = userRepository; // UserRepository'yi al
+        }
+
+        public async Task<IActionResult> Index()
+        {
+            // Kullanıcı adını oturumdan al
+            var username = HttpContext.Session.GetString("Username");
+
+            if (username != null)
+            {
+                // Kullanıcı bilgilerini al
+                var userDetails = _userRepository.GetUserDetails(username);
+
+                ViewBag.FirstName = userDetails.FirstName;
+                ViewBag.LastName = userDetails.LastName;
+            }
+
+            // Kullanıcı ve ekran kontrolü
+            if (!await _userRepository.HasPermission(username, "dashboard"))
+            {
+                return RedirectToAction("index", "yetki_yok");
+            }
+
+
+            // Makine üretim miktarı sorgusu
+            string productionQuery = @"
+                SELECT 
+                    dashbord_makina_uretim.lkmakina_ad,
+                    SUM(dashbord_makina_uretim.miktar) AS Miktar
+                FROM 
+                    [bobin_durum].[dbo].[dashbord_makina_uretim] dashbord_makina_uretim
+                INNER JOIN 
+                    [uretim].[dbo].[lkmakina] lkmakina ON lkmakina.lkmakina_id = dashbord_makina_uretim.lkmakina_id
+                INNER JOIN 
+                    [uretim].[dbo].[ms_fabrika] ms_fabrika ON ms_fabrika.fabrika_id = lkmakina.fabrika_id
+                WHERE 
+                    dashbord_makina_uretim.lkmakina_ad = 'BHS'
+                GROUP BY 
+                    dashbord_makina_uretim.lkmakina_ad;";
+
+            // Kağıt stok sorgusu
+            string esk_stockQuery = @"
+                DECLARE @bugun DATE, @buay DATE, @ay INT, @yil INT, @dun DATE
+                SET @dun = DATEADD(dd, -1, GETDATE())
+                SET @ay = DATEPART(mm, @dun)
+                SET @yil = DATEPART(yy, @dun)
+
+                SELECT 
+                    SUM(COALESCE(CASE WHEN CAST(stok_ay.kalan AS INT) IS NULL THEN 0 ELSE CAST(stok_ay.kalan AS INT) END, 0)) AS [Stok]
+                FROM uretim.dbo.stok_ay
+                INNER JOIN uretim.dbo.stok_ana ON stok_ay.stok_ana_id = stok_ana.stok_ana_id
+                INNER JOIN uretim.dbo.masraf_ana ON stok_ay.ambar_no = masraf_ana_id
+                INNER JOIN uretim.dbo.cins ON stok_ana.cins_id = cins.cins_id
+                WHERE stok_ay.ay = @ay AND stok_ay.yil = @yil AND stok_ana.kagitmi = 32048 AND masraf_ana.fabrika_id = 26;";
+
+            // Eskişehir Kağıt Sarf Miktarı
+            string esk_kagit_sarf = @"Declare @bugun date
+declare @buay date
+declare @ay date
+Declare @gun int
+Declare @dun date
+Declare @dungun int
+
+set @dun= dateadd(dd,-1,getdate())
+set @dungun= datepart(dd,@dun)
+set @ay= dateadd(dd,-@dungun,getdate())
+
+SELECT
+			sum(a.miktar) as [Sarf] 
+FROM            
+uretim.dbo.bobin with(nolock) , uretim.dbo.stok_hareket a with(nolock),uretim.dbo.stok_ana b with(nolock)
+
+		inner join
+			uretim.dbo.cins on b.cins_id = cins.cins_id 
+
+WHERE bobin.fabrika_id = 26
+
+and bobin.bobin_id = a.bobin_id
+and a.stok_ana_id =b.stok_ana_id
+and  a.hareket_tip  = 556  
+and  convert(date,a.tarih) >= @ay
+and  convert(date,a.tarih) <= @dun;";
+
+
+            // Eskişehir BHS üretim miktarı
+            string BHS_uretim = @"SELECT 
+Sum(cast(dashbord_makina_uretim.miktar as int )) as [Miktar]
+
+  FROM [bobin_durum].[dbo].[dashbord_makina_uretim] dashbord_makina_uretim
+inner join [uretim].[dbo].[lkmakina] lkmakina on lkmakina.lkmakina_id=dashbord_makina_uretim.lkmakina_id
+inner join [uretim].[dbo].[ms_fabrika] ms_fabrika on ms_fabrika.fabrika_id = lkmakina.fabrika_id
+where dashbord_makina_uretim.lkmakina_ad ='BHS';";
+
+            // Eskişehir'den Sakarya'ya Sevk Edilen'
+            string esk_to_sak = @"DECLARE @bugun DATE
+DECLARE @buay DATE
+DECLARE @ay DATE
+DECLARE @gun INT
+DECLARE @dun DATE
+DECLARE @dungun INT
+
+SET @dun = DATEADD(dd, -1, GETDATE())
+SET @dungun = DATEPART(dd, @dun)
+SET @ay = DATEADD(dd, -@dungun, GETDATE())
+
+SELECT
+    sum(cast (urun.uretim_alan * irsaliye_detay.irsaliye_miktar as decimal(15,0))) as [m2],
+    sum(cast (siparis_detay.satis_fiyat * irsaliye_detay.irsaliye_miktar as decimal(15,0))) as [Tutar]
+FROM [uretim].[dbo].[irsaliye_detay]
+INNER JOIN uretim.dbo.irsaliye ON irsaliye.irsaliye_id = irsaliye_detay.irsaliye_id
+INNER JOIN uretim.dbo.siparis_detay ON siparis_detay.siparis_detay_id = irsaliye_detay.siparis_Detay_id
+INNER JOIN uretim.dbo.urun ON irsaliye_detay.urun_id = urun.urun_id
+INNER JOIN uretim.dbo.urun_sinif ON urun.urun_sinif_id = urun_sinif.urun_sinif_id
+INNER JOIN uretim.dbo.ms_fabrika ON irsaliye.fabrika_id = ms_fabrika.fabrika_id
+INNER JOIN uretim.dbo.firma ON irsaliye.firma_id = firma.firma_id
+WHERE (irsaliye_detay.irsaliye_tarih BETWEEN @ay AND @dun)
+  AND irsaliye_detay.siparis_Detay_id != 0
+  AND (irsaliye_detay.irsaliye_tip BETWEEN '460' AND '463')
+  AND irsaliye_detay.irsaliye_tip != '461'
+  AND irsaliye_detay.irsaliye_tip != '462'
+  AND irsaliye.fabrika_id = 26
+  AND firma.firma_kodu LIKE 'SPSAM'";
+
+            // Eskişehir Sipariş Miktarı
+            string esk_siparis_miktarı = @"DECLARE @bugun DATE;
+DECLARE @buay DATE;
+DECLARE @ay DATE;
+DECLARE @gun INT;
+DECLARE @dun DATE;
+DECLARE @dungun INT;
+DECLARE @songun DATE;
+
+SET @dun = DATEADD(dd, -1, GETDATE());
+SET @dungun = DATEPART(dd, @dun);
+SET @ay = DATEADD(dd, -@dungun, GETDATE());
+SET @songun = DATEADD(dd, -1, DATEADD(mm, DATEDIFF(mm, 0, GETDATE()) + 1, 0));
+
+-- İlk olarak m2 için veriler toplanıyor
+;WITH m2_pivot AS (
+    SELECT 
+        CASE
+            WHEN urun_sinif.kod = 40 THEN 'LEVHA'
+            WHEN urun_sinif.kod = 06 THEN 'LEVHA'
+            WHEN urun_sinif.kod = 93 THEN 'TİCARİ'
+            ELSE 'KUTU'
+        END AS 'Sınıf',
+        SUM(CAST(urun.uretim_alan * siparis_detay.siparis_miktar AS REAL)) AS [m2]
+    FROM [uretim].[dbo].[siparis_detay]
+    INNER JOIN uretim.dbo.urun ON siparis_detay.urun_id = urun.urun_id
+    INNER JOIN uretim.dbo.siparis ON siparis_detay.siparis_id = siparis.siparis_id
+    INNER JOIN uretim.dbo.urun_sinif ON urun.urun_sinif_id = urun_sinif.urun_sinif_id
+    INNER JOIN uretim.dbo.ms_fabrika ON siparis.fabrika_id = ms_fabrika.fabrika_id
+    WHERE 
+        (siparis_detay.termin_tarih BETWEEN @ay AND @songun)
+        AND (siparis_detay.siparis_tip BETWEEN '150' AND '154')
+        AND siparis_detay.siparis_tip != '151'
+        AND siparis_detay.acma_kapama NOT IN ('140', '143', '144', '145')
+        AND siparis.fabrika_id = 26
+    GROUP BY
+        CASE
+            WHEN urun_sinif.kod = 40 THEN 'LEVHA'
+            WHEN urun_sinif.kod = 06 THEN 'LEVHA'
+            WHEN urun_sinif.kod = 93 THEN 'TİCARİ'
+            ELSE 'KUTU'
+        END
+),
+-- İkinci olarak Tutar için veriler toplanıyor
+tutar_pivot AS (
+    SELECT 
+        CASE
+            WHEN urun_sinif.kod = 40 THEN 'LEVHA'
+            WHEN urun_sinif.kod = 06 THEN 'LEVHA'
+            WHEN urun_sinif.kod = 93 THEN 'TİCARİ'
+            ELSE 'KUTU'
+        END AS 'Sınıf',
+        SUM(CAST(siparis_detay.satis_fiyat * siparis_detay.siparis_miktar AS REAL)) AS [Tutar]
+    FROM [uretim].[dbo].[siparis_detay]
+    INNER JOIN uretim.dbo.urun ON siparis_detay.urun_id = urun.urun_id
+    INNER JOIN uretim.dbo.siparis ON siparis_detay.siparis_id = siparis.siparis_id
+    INNER JOIN uretim.dbo.urun_sinif ON urun.urun_sinif_id = urun_sinif.urun_sinif_id
+    INNER JOIN uretim.dbo.ms_fabrika ON siparis.fabrika_id = ms_fabrika.fabrika_id
+    WHERE 
+        (siparis_detay.termin_tarih BETWEEN @ay AND @songun)
+        AND (siparis_detay.siparis_tip BETWEEN '150' AND '154')
+        AND siparis_detay.siparis_tip != '151'
+        AND siparis_detay.acma_kapama NOT IN ('140', '143', '144', '145')
+        AND siparis.fabrika_id = 26
+    GROUP BY
+        CASE
+            WHEN urun_sinif.kod = 40 THEN 'LEVHA'
+            WHEN urun_sinif.kod = 06 THEN 'LEVHA'
+            WHEN urun_sinif.kod = 93 THEN 'TİCARİ'
+            ELSE 'KUTU'
+        END
+)
+
+-- İki veriyi INNER JOIN ile birleştiriyoruz ve her sınıf için tekil değerler alıyoruz
+SELECT 
+    cast(ISNULL(SUM(CASE WHEN t.Sınıf = 'KUTU' THEN t.Tutar ELSE 0 END), 0)as int) AS [BOX_TL],
+    cast(ISNULL(SUM(CASE WHEN t.Sınıf = 'LEVHA' THEN t.Tutar ELSE 0 END), 0)as int) AS [SHEET_TL],
+    cast(ISNULL(SUM(CASE WHEN t.Sınıf = 'TİCARİ' THEN t.Tutar ELSE 0 END), 0)as int) AS [Merch_TL],
+    cast(ISNULL(SUM(CASE WHEN t.Sınıf IN ('KUTU', 'LEVHA', 'TİCARİ') THEN t.Tutar ELSE 0 END), 0)as int) AS [Total_TL],
+
+    cast(ISNULL(SUM(CASE WHEN m.Sınıf = 'KUTU' THEN m.m2 ELSE 0 END), 0)as int) AS [BOX_m2],
+    cast(ISNULL(SUM(CASE WHEN m.Sınıf = 'LEVHA' THEN m.m2 ELSE 0 END), 0)as int) AS [SHEET_m2],
+    cast(ISNULL(SUM(CASE WHEN m.Sınıf = 'TİCARİ' THEN m.m2 ELSE 0 END), 0)as int) AS [Merch_m2],
+    cast(ISNULL(SUM(CASE WHEN m.Sınıf IN ('KUTU', 'LEVHA', 'TİCARİ') THEN m.m2 ELSE 0 END), 0)as int) AS [Total_m2],
+    cast(ISNULL(SUM(CASE WHEN t.Sınıf IN ('KUTU', 'LEVHA', 'TİCARİ') THEN t.Tutar ELSE 0 END), 0) / NULLIF(ISNULL(SUM(CASE WHEN m.Sınıf IN ('KUTU', 'LEVHA', 'TİCARİ') THEN m.m2 ELSE 0 END), 0), 0) AS decimal(15,2)) AS [TL/m2]
+FROM tutar_pivot t
+INNER JOIN m2_pivot m ON t.Sınıf = m.Sınıf;";
+
+            var productionResult = await ExecuteQueryForMiktar(productionQuery);
+            var esk_stockResult = await ExecuteQueryForStok(esk_stockQuery);
+            var esk_sarfResult = await ExecuteQueryForESK_Sarf(esk_kagit_sarf);
+            var bhsuretimResult = await ExecuteQueryForBHS_uretim(BHS_uretim);
+            var esk_sak_sevkResult = await ExecuteQueryForESK_to_SAK(esk_to_sak);
+            var esk_sipResult = await ExecuteQueryForTableData(esk_siparis_miktarı);
+
+            DashboardViewModel model = new DashboardViewModel()
+            {
+                Makine_KG = productionResult,
+                ESK_Kagit_stok = esk_stockResult,
+                ESK_Sheet_m2 = esk_sipResult.SHEET_m2,
+                ESK_Box_m2 = esk_sipResult.BOX_m2,
+                ESK_Merch_m2 = esk_sipResult.Merch_m2,
+                ESK_Total_m2 = esk_sipResult.Total_m2,
+                ESK_Box_tl = esk_sipResult.box_tl,
+                ESK_Sheet_tl = esk_sipResult.sheet_tl,
+                ESK_Merch_tl = esk_sipResult.merch_tl,
+                ESK_Total_tl = esk_sipResult.total_tl,
+                ESK_tl_m2 = esk_sipResult.tl_m2,
+                ESK_kagit_sarf = esk_sarfResult,
+                BHS_KG = bhsuretimResult,
+                ESK_SAK_SEVK = esk_sak_sevkResult.m2,
+                ESK_SAK_SEVK_TL = esk_sak_sevkResult.Tutar
+
+            };
+
+
+
+            return View(model);
+        }
+
+        // BHS üretim miktarını çekmek için metot
+        private async Task<int> ExecuteQueryForMiktar(string query)
+        {
+            int totalAmount = 0;
+            using (SqlConnection connection = new SqlConnection(_connectionString))
+            {
+                await connection.OpenAsync();
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    var reader = await command.ExecuteReaderAsync();
+                    if (await reader.ReadAsync())
+                    {
+                        totalAmount = reader.IsDBNull(1) ? 0 : reader.GetInt32(1);
+                    }
+                }
+            }
+            return totalAmount;
+        }
+
+        // Eskişehir Kağıt stok miktarını çekmek için metot
+        private async Task<int> ExecuteQueryForStok(string query)
+        {
+            int totalStock = 0;
+            using (SqlConnection connection = new SqlConnection(_connectionString))
+            {
+                await connection.OpenAsync();
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    var reader = await command.ExecuteReaderAsync();
+                    if (await reader.ReadAsync())
+                    {
+                        totalStock = reader.IsDBNull(0) ? 0 : reader.GetInt32(0);
+                    }
+                }
+            }
+            return totalStock;
+        }
+
+        // Eskişehir Kağıt Sarf miktarını çekmek için metot
+        private async Task<int> ExecuteQueryForESK_Sarf(string query)
+        {
+            int totalsarf = 0;
+            using (SqlConnection connection = new SqlConnection(_connectionString))
+            {
+                await connection.OpenAsync();
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    var reader = await command.ExecuteReaderAsync();
+                    if (await reader.ReadAsync())
+                    {
+                        // Değeri decimal olarak al
+                        decimal result = reader.IsDBNull(0) ? 0 : reader.GetDecimal(0);
+                        totalsarf = (int)result; // Gerekirse int'e dönüştür
+                    }
+                }
+            }
+            return totalsarf;
+        }
+
+
+        // Eskişehir BHS Uretim miktarını çekmek için metot
+        private async Task<int> ExecuteQueryForBHS_uretim(string query)
+        {
+            int BHS_uretim = 0;
+            using (SqlConnection connection = new SqlConnection(_connectionString))
+            {
+                await connection.OpenAsync();
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    var reader = await command.ExecuteReaderAsync();
+                    if (await reader.ReadAsync())
+                    {
+                        BHS_uretim = reader.IsDBNull(0) ? 0 : reader.GetInt32(0);
+                    }
+                }
+            }
+            return BHS_uretim;
+        }
+
+        // Eskişehir'den Sakarya'ya Sevk Miktarı
+        private async Task<(int m2, int Tutar)> ExecuteQueryForESK_to_SAK(string query)
+        {
+            int m2 = 0;
+            int Tutar = 0;
+
+            using (SqlConnection connection = new SqlConnection(_connectionString))
+            {
+                await connection.OpenAsync();
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    var reader = await command.ExecuteReaderAsync();
+                    if (await reader.ReadAsync())
+                    {
+                        // Değeri decimal olarak al
+                        decimal result = reader.IsDBNull(0) ? 0 : reader.GetDecimal(0);
+                        m2 = (int)result; // Gerekirse int'e dönüştür
+                        Tutar = (int)result;
+                    }
+                }
+            }
+            return (m2, Tutar);
+        }
+
+
+        // Eskişehir Sipariş Miktarları
+        private async Task<(int SHEET_m2, int BOX_m2, int Merch_m2, int Total_m2, int box_tl, int sheet_tl, int merch_tl, int total_tl, decimal tl_m2)> ExecuteQueryForTableData(string query)
+        {
+            int SHEET_m2 = 0;
+            int BOX_m2 = 0;
+            int Merch_m2 = 0;
+            int Total_m2 = 0;
+            int box_tl = 0;
+            int sheet_tl = 0;
+            int merch_tl = 0;
+            int total_tl = 0;
+            decimal tl_m2 = 0;
+
+            using (SqlConnection connection = new SqlConnection(_connectionString))
+            {
+                await connection.OpenAsync();
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    var reader = await command.ExecuteReaderAsync();
+                    if (await reader.ReadAsync())
+                    {
+                        box_tl = reader.IsDBNull(0) ? 0 : reader.GetInt32(0);
+                        sheet_tl = reader.IsDBNull(1) ? 0 : reader.GetInt32(1);
+                        merch_tl = reader.IsDBNull(2) ? 0 : reader.GetInt32(2);
+                        total_tl = reader.IsDBNull(3) ? 0 : reader.GetInt32(3);
+                        BOX_m2 = reader.IsDBNull(4) ? 0 : reader.GetInt32(4);
+                        SHEET_m2 = reader.IsDBNull(5) ? 0 : reader.GetInt32(5);
+                        Merch_m2 = reader.IsDBNull(6) ? 0 : reader.GetInt32(6);
+                        Total_m2 = reader.IsDBNull(7) ? 0 : reader.GetInt32(7);
+                        tl_m2 = reader.IsDBNull(8) ? 0 : reader.GetDecimal(8);
+
+                    }
+                }
+            }
+            return (SHEET_m2, BOX_m2, Merch_m2, Total_m2, box_tl, sheet_tl, merch_tl, total_tl, tl_m2);
+        }
+    }
+}
+
+
+

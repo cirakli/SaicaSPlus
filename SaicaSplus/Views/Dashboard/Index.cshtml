@@ -27,7 +27,7 @@
     <h2>SAK Deliveries TL</h2>
     <p>@Model.ESK_SAK_SEVK_TL</p>
 
-    <h2>Monthly Open Orders</h2>
+    <h2>ESK Monthly Open Orders</h2>
     <table border="1">
         <thead>
             <tr>
@@ -57,7 +57,7 @@
         </tbody>
     </table>
 
-    <h2>Sales Order Dispatches</h2>
+    <h2>ESK Sales Order Dispatches</h2>
     <table border="1">
         <thead>
             <tr>
@@ -87,6 +87,71 @@
                 <td>@Model.ESK_Sevk_Konsinye_tl</td>
                 <td>@Model.ESK_Sevk_Total_tl</td>
                 <td>@Model.ESK_Sevk_tl_m2</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>SAK Conversion Production</h2>
+    <p>@Model.SAK_Uretim_m2</p>
+
+    <h2>SAK Paper Stock KG</h2>
+    <p>@Model.SAK_Kagit_kg</p>
+
+    <h2>SAK Paper Consumption KG</h2>
+    <p>@Model.SAK_Kagit_Sarf</p>
+
+    <h2>SAK Monthly Open Orders</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Box m2</th>
+                <th>Merch m2</th>
+                <th>Total m2</th>
+                <th>Box TL</th>
+                <th>Merch TL</th>
+                <th>Total TL</th>
+                <th>TL/m2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@Model.SAK_Box_m2</td>
+                <td>@Model.SAK_Merch_m2</td>
+                <td>@Model.SAK_Total_m2</td>
+                <td>@Model.SAK_box_tl</td>
+                <td>@Model.SAK_merch_tl</td>
+                <td>@Model.SAK_total_tl</td>
+                <td>@Model.SAK_tl_m2</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>SAK Sales Order Dispatches</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Box m2</th>
+                <th>Merch m2</th>
+                <th>Konsinye m2</th>
+                <th>Total m2</th>
+                <th>Box TL</th>
+                <th>Merch TL</th>
+                <th>Konsinye TL</th>
+                <th>Total TL</th>
+                <th>TL/m2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@Model.SAK_Sevk_Box_m2</td>
+                <td>@Model.SAK_Sevk_Merch_m2</td>
+                <td>@Model.SAK_Sevk_Konsinye_m2</td>
+                <td>@Model.SAK_Sevk_Total_m2</td>
+                <td>@Model.SAK_Sevk_box_tl</td>
+                <td>@Model.SAK_Sevk_merch_tl</td>
+                <td>@Model.SAK_Sevk_Konsinye_tl</td>
+                <td>@Model.SAK_Sevk_total_tl</td>
+                <td>@Model.SAK_Sevk_tl_m2</td>
             </tr>
         </tbody>
     </table>

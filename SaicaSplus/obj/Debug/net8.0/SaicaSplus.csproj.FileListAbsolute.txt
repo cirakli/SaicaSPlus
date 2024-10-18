@@ -589,3 +589,6 @@ C:\proje\SaicaSplus\SaicaSplus\obj\Debug\net8.0\refint\SaicaSplus.dll
 C:\proje\SaicaSplus\SaicaSplus\obj\Debug\net8.0\SaicaSplus.pdb
 C:\proje\SaicaSplus\SaicaSplus\obj\Debug\net8.0\SaicaSplus.genruntimeconfig.cache
 C:\proje\SaicaSplus\SaicaSplus\obj\Debug\net8.0\ref\SaicaSplus.dll
+C:\proje\SaicaSplus\SaicaSplus\bin\Debug\net8.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\proje\SaicaSplus\SaicaSplus\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Json.dll
+C:\proje\SaicaSplus\SaicaSplus\bin\Debug\net8.0\Microsoft.Extensions.Configuration.UserSecrets.dll

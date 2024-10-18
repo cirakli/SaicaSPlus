@@ -12,6 +12,9 @@ C:\proje\SaicaSplus\SaicaSplus\obj\Release\net8.0\PubTmp\Out\Microsoft.EntityFra
 C:\proje\SaicaSplus\SaicaSplus\obj\Release\net8.0\PubTmp\Out\Microsoft.EntityFrameworkCore.Abstractions.dll
 C:\proje\SaicaSplus\SaicaSplus\obj\Release\net8.0\PubTmp\Out\Microsoft.EntityFrameworkCore.Relational.dll
 C:\proje\SaicaSplus\SaicaSplus\obj\Release\net8.0\PubTmp\Out\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\proje\SaicaSplus\SaicaSplus\obj\Release\net8.0\PubTmp\Out\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\proje\SaicaSplus\SaicaSplus\obj\Release\net8.0\PubTmp\Out\Microsoft.Extensions.Configuration.Json.dll
+C:\proje\SaicaSplus\SaicaSplus\obj\Release\net8.0\PubTmp\Out\Microsoft.Extensions.Configuration.UserSecrets.dll
 C:\proje\SaicaSplus\SaicaSplus\obj\Release\net8.0\PubTmp\Out\Microsoft.Identity.Client.dll
 C:\proje\SaicaSplus\SaicaSplus\obj\Release\net8.0\PubTmp\Out\Microsoft.Identity.Client.Extensions.Msal.dll
 C:\proje\SaicaSplus\SaicaSplus\obj\Release\net8.0\PubTmp\Out\Microsoft.IdentityModel.Abstractions.dll

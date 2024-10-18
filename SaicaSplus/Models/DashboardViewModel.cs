@@ -29,5 +29,28 @@
 
         public decimal ESK_tl_m2 { get; set; } = 0; //Eskişehir TL/m2
 
+        public int ESK_Sevk_Sheet_m2 { get; set; } = 0;  //Eskişehir Total TL
+
+        public int ESK_Sevk_Box_m2 { get; set; } = 0;  //Eskişehir Total TL
+
+        public int ESK_Sevk_Merch_m2 { get; set; } = 0;  //Eskişehir Total TL
+
+        public int ESK_Sevk_Konsinye_m2 { get; set; } = 0;  //Eskişehir Total TL
+
+        public int ESK_Sevk_Total_m2 { get; set; } = 0;  //Eskişehir Total TL
+
+        public int ESK_Sevk_Box_tl { get; set; } = 0;  //Eskişehir Total TL
+
+        public int ESK_Sevk_Sheet_tl { get; set; } = 0;  //Eskişehir Total TL
+
+        public int ESK_Sevk_Merch_tl { get; set; } = 0;  //Eskişehir Total TL
+
+        public int ESK_Sevk_Konsinye_tl { get; set; } = 0;  //Eskişehir Total TL
+
+        public int ESK_Sevk_Total_tl { get; set; } = 0;  //Eskişehir Total TL
+
+        public decimal ESK_Sevk_tl_m2 { get; set; } = 0;  //Eskişehir Total TL
+
+
     }
 }
